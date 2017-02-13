@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'BIP';
+	src: url('../fonts/BIP/BIP.eot');
+	src: url('../fonts/BIP/BIP.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BIP/BIP.woff') format('woff'),
+		 url('../fonts/BIP/BIP.ttf') format('truetype'),
+		 url('../fonts/BIP/BIP.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}

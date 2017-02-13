@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="340fa7ef-07e4-4a1e-b796-81d2bd84cec5" name="Default" comment="" />
+    <ignored path="Anhel-Kids1.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Anhel-Kids1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#0;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#0;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#1;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#1;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#2;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#2;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#2;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#3;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#4;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#4;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#5;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#5;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#6;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#6;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#7;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#7;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#9;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#9;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#10;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#10;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#11;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#11;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#12;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#12;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#13;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#13;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#14;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#14;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#289223#289259#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gallery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/gallery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="construct.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/construct.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="396" column="22" selection-start-line="396" selection-start-column="22" selection-end-line="396" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="761">
+              <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+              <folding>
+                <marker date="1486977947069" expanded="true" signature="117:22696" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="147:509" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="179:494" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="219:475" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="257:452" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="335:425" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="548:3846" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="584:3831" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="618:3812" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="659:3573" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="703:1725" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="750:950" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="796:874" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="875:915" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="997:1198" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="1043:1122" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1123:1163" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1245:1446" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="1291:1370" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1371:1411" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1493:1694" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="1539:1618" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1619:1659" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1770:2793" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1817:2018" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="1863:1942" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="1943:1983" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2065:2266" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="2111:2190" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2191:2231" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2313:2514" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="2359:2438" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2439:2479" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2561:2762" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="2607:2686" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2687:2727" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2839:3546" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2886:3008" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="2933:2973" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3055:3177" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3102:3142" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3224:3346" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3271:3311" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3393:3515" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3440:3480" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3882:4361" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3924:4346" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="3968:4327" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4012:4304" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4054:4277" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4136:4246" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4399:13506" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4435:11688" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4469:11669" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4543:11646" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4596:11392" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4644:6851" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="4695:5187" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="5238:5730" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="5781:6273" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="6324:6816" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="6899:9106" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="6950:7442" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="7493:7985" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="8036:8528" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="8579:9071" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="9154:11361" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="9205:9697" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="9748:10240" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="10291:10783" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="10834:11326" ph="..." />
+                <marker date="1486977947069" expanded="false" signature="11806:11946" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="11947:13491" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="12057:12362" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="12094:12345" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="12382:13482" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="12489:13461" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="12630:13436" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="13542:14028" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="13584:14013" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="13628:13994" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="13672:13971" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="13714:13944" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="13796:13913" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14055:22169" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14091:22154" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14125:22135" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14199:22112" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14249:22085" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14296:16850" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14353:15450" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14409:14882" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="14938:15411" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="15509:15660" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="15718:16815" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="15774:16247" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="16303:16776" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="16898:19452" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="16955:18052" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="17011:17484" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="17540:18013" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="18111:18262" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="18320:19417" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="18376:18849" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="18905:19378" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="19500:22054" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="19557:20654" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="19613:20086" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="20142:20615" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="20713:20864" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="20922:22019" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="20978:21451" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="21507:21980" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="22205:22681" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="22247:22666" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="22291:22647" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="22335:22624" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="22377:22597" ph="..." />
+                <marker date="1486977947069" expanded="true" signature="22459:22566" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/scripts.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/main.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/construct.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/naw_menu.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/gallery.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1612" />
+    <option name="height" value="1168" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Anhel-Kids1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="340fa7ef-07e4-4a1e-b796-81d2bd84cec5" name="Default" comment="" />
+      <created>1486975175787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1486975175787</updated>
+      <workItem from="1486975177087" duration="16087000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16087000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1612" height="1168" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20052083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding>
+            <marker date="1486977947069" expanded="true" signature="117:22696" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="147:509" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="179:494" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="219:475" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="257:452" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="335:425" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="548:3846" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="584:3831" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="618:3812" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="659:3573" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="703:1725" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="750:950" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="796:874" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="875:915" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="997:1198" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="1043:1122" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1123:1163" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1245:1446" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="1291:1370" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1371:1411" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1493:1694" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="1539:1618" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1619:1659" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1770:2793" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1817:2018" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="1863:1942" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="1943:1983" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2065:2266" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="2111:2190" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2191:2231" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2313:2514" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="2359:2438" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2439:2479" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2561:2762" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="2607:2686" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2687:2727" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2839:3546" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2886:3008" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="2933:2973" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3055:3177" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3102:3142" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3224:3346" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3271:3311" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3393:3515" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3440:3480" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3882:4361" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3924:4346" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="3968:4327" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4012:4304" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4054:4277" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4136:4246" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4399:13506" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4435:11688" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4469:11669" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4543:11646" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4596:11392" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4644:6851" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="4695:5187" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="5238:5730" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="5781:6273" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="6324:6816" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="6899:9106" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="6950:7442" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="7493:7985" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="8036:8528" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="8579:9071" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="9154:11361" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="9205:9697" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="9748:10240" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="10291:10783" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="10834:11326" ph="..." />
+            <marker date="1486977947069" expanded="false" signature="11806:11946" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="11947:13491" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="12057:12362" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="12094:12345" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="12382:13482" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="12489:13461" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="12630:13436" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="13542:14028" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="13584:14013" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="13628:13994" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="13672:13971" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="13714:13944" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="13796:13913" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14055:22169" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14091:22154" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14125:22135" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14199:22112" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14249:22085" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14296:16850" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14353:15450" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14409:14882" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="14938:15411" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="15509:15660" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="15718:16815" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="15774:16247" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="16303:16776" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="16898:19452" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="16955:18052" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="17011:17484" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="17540:18013" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="18111:18262" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="18320:19417" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="18376:18849" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="18905:19378" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="19500:22054" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="19557:20654" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="19613:20086" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="20142:20615" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="20713:20864" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="20922:22019" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="20978:21451" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="21507:21980" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="22205:22681" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="22247:22666" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="22291:22647" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="22335:22624" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="22377:22597" ph="..." />
+            <marker date="1486977947069" expanded="true" signature="22459:22566" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/naw_menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#0;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#0;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#1;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#1;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#2;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#2;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#2;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#3;n#linearGradient#3;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#4;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#4;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#5;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#5;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#6;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#6;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#7;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#7;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#9;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#9;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#10;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#10;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#11;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#11;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#12;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#12;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#13;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#13;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#14;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#14;n#defs#0;n#svg#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#289223#289259#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/construct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="396" column="22" selection-start-line="396" selection-start-column="22" selection-end-line="396" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
