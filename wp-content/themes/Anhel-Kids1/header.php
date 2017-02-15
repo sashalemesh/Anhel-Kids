@@ -21,7 +21,7 @@
 
 <body>
 <?php
-if ( is_page_template('templates/order.php') || is_page_template('templates/gallery.php')) { ?>
+if ( is_page_template('templates/order.php') || is_page_template('templates/gallery.php') || is_page_template('templates/catalog.php')) { ?>
 <div class="internal-pages">
 <?php } ?>
     <?php
@@ -2389,6 +2389,7 @@ if ( is_page_template('templates/order.php') || is_page_template('templates/gall
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <!--                --><?php
 //                wp_nav_menu(array(
+                        //'container' => 'false',
 //                    //The location that we want to bring
 //                    'theme_location'=>'menu_1',
 //                    //Location displays the HTML markup menu
@@ -2400,16 +2401,30 @@ if ( is_page_template('templates/order.php') || is_page_template('templates/gall
 //                    //'walker'=> new Sublevel_Walker
 //                ));
 //                ?>
+                <?php
+                $header = get_fields(27);
+                ?>
                 <ul class="menu">
                     <?php
-                    if ( is_page_template('templates/order.php') || is_page_template('templates/construct.php')) { ?>
-                    <li class="logo"><a href="#"><img src="<?php bloginfo("template_directory");?>/images/logotype.svg" alt=""></a></li>
+                        if(!is_page_template('templates/main.php')){
+                        ?>
+                    <li class="logo"><a href="/"><img src="<?php bloginfo("template_directory");?>/images/logotype.svg" alt=""></a></li>
                     <?php } ?>
-                    <li class="constructor"><a href="#"><p>Конструктор</p></a></li>
-                    <li class="catalog"><a href="#"><p>Каталог</p></a></li>
-                    <li class="gallery"><a href="#"><p>Галерея</p></a></li>
-                    <li class="about-us"><a href="#"><p>О нас</p></a></li>
-                    <li class="vk"><a href="https://vk.com/anhel.kids" target="_blank"><img src="<?php bloginfo("template_directory");?>/images/vk.svg" alt=""></a></li>
+                    <?php if($header['menu_1'] != null){ ?>
+                    <li class="constructor"><a href="<?php echo $header['menu_1_url'];?>"><p><?php echo $header['menu_1'];?></p></a></li>
+                        <?php }?>
+                    <?php if($header['menu_2'] != null){ ?>
+                    <li class="catalog"><a href="<?php echo $header['menu_2_url'];?>"><p><?php echo $header['menu_2'];?></p></a></li>
+                    <?php }?>
+                    <?php if($header['menu_3'] != null){ ?>
+                    <li class="gallery"><a href="<?php echo $header['menu_3_url'];?>"><p><?php echo $header['menu_3'];?></p></a></li>
+                    <?php }?>
+                    <?php if($header['menu_4'] != null){ ?>
+                    <li class="about-us"><a href="<?php echo $header['menu_4_url'];?>"><p><?php echo $header['menu_4'];?></p></a></li>
+                    <?php }?>
+                    <?php if($header['vk_url'] != null){ ?>
+                    <li class="vk"><a href="<?php echo $header['vk_url'];?>" target="_blank"><img src="<?php bloginfo("template_directory");?>/images/vk.svg" alt=""></a></li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -2418,13 +2433,16 @@ if ( is_page_template('templates/order.php') || is_page_template('templates/gall
 
     <?php
     if ( is_page_template('templates/main.php')) {
-
     ?>
+    <?php if($header['video'] != null){ ?>
     <div class="video">
         <video autoplay="autoplay" loop>
-            <source src="<?php bloginfo("template_directory");?>/images/AK_Mult.mp4">
+            <source src="<?php echo $header['video'];?>">
         </video>
     </div>
-    <a href="#" class="button">Создать чехол</a>
+        <?php }?>
+    <?php if($header['sozdat_chekol'] != null){ ?>
+    <a href="<?php echo $header['sozdat_chekol_url'];?>" class="button"><?php echo $header['sozdat_chekol'];?></a>
+        <?php } ?>
     <?php } ?>
 </header>

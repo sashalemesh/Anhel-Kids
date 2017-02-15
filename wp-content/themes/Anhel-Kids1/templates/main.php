@@ -116,6 +116,15 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<!--                        --><?php //comments_template(); ?>
+<!--                        --><?php
+//                        while ( have_posts() ) : the_post();
+//                        if ( comments_open() || get_comments_number() ) :
+//                        comments_template();
+//                        endif;
+//                        endwhile;
+//                        ?>
+
                         <div class="reviews-slider">
                             <div class="items">
                                 <div class="item">
