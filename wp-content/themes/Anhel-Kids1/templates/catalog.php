@@ -5,8 +5,11 @@ get_header();
 
 ?>
 
+
+
+
 <!--<body>-->
-<!--<!--START HEADER-->-->
+<!--<!--START HEADER-->
 <!--<div class="internal-pages">-->
 <!--    <header>-->
 <!--        <div class="container">-->
@@ -30,6 +33,16 @@ get_header();
 
     <section>
         <a href="#" class="create-Case">Создать чехол</a>
+
+        <?php if(have_posts()) : ?>
+            <?php while (have_posts()) :the_post();?>
+                <h1 class="title"><?php the_title(); ?></h1>
+                <?php the_content() ; ?>
+            <?php endwhile;?>
+        <?php endif;?>
+
+
+
         <div class="samples">
             <div class="title">
                 <div class="container">
@@ -188,20 +201,20 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="reviews-block">
-            <div class="reviews-content">
-                <div class="title reviews">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="title reviews">Контакты</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--        <div class="reviews-block">-->
+<!--            <div class="reviews-content">-->
+<!--                <div class="title reviews">-->
+<!--                    <div class="container">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+<!--                                <h2 class="title reviews">Контакты</h2>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <!--END CONTENT-->
 

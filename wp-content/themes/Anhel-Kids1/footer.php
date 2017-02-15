@@ -1,13 +1,35 @@
 
-
-
+<?php
+$footer = get_fields(27);
+?>
+<?php if(!is_page_template('templates/construct.php')) { ?>
+<div class="reviews-block">
+    <div class="reviews-content">
+        <div class="title reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <?php if($footer['contacts'] != null){ ?>
+                        <h2 class="title reviews"><?php echo $footer['contacts'];?></h2>
+                        <?php }?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php } ?>
+</section>
 
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                <?php if($footer['footer_text'] != null){ ?>
+                <?php echo $footer['footer_text'];?>
+                <?php }?>
+                <!--Contact form 7-->
+<!--                --><?php //echo do_shortcode('[contact-form-7 id="86" title="contact form"]'); ?>
                 <form action="">
                     <h4>Связаться с нами</h4>
                     <div class="left-block">

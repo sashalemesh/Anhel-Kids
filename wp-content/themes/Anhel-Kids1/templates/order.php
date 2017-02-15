@@ -5,6 +5,8 @@ get_header();
 
 ?>
 
+
+
     <!--END HEADER-->
 
     <!--START CONTENT-->
@@ -104,20 +106,20 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="reviews-block">
-            <div class="reviews-content">
-                <div class="title reviews">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="title reviews">Контакты</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--        <div class="reviews-block">-->
+<!--            <div class="reviews-content">-->
+<!--                <div class="title reviews">-->
+<!--                    <div class="container">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+<!--                                <h2 class="title reviews">Контакты</h2>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <!--END CONTENT-->
 

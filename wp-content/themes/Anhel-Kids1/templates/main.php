@@ -4,7 +4,10 @@
 get_header();
 
 ?>
-
+<?php
+$main = get_fields();
+$reviews = get_fields(70);
+?>
     <!--END HEADER-->
 
     <!--START CONTENT-->
@@ -14,7 +17,9 @@ get_header();
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h2 class="title">Образцы</h2>
+                            <?php if($main['samples'] != null){ ?>
+                            <h2 class="title"><?php echo $main['samples'];?></h2>
+                            <?php }?>
                         </div>
                     </div>
                 </div>
@@ -26,70 +31,55 @@ get_header();
                     <div class="slider">
                         <div class="items">
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img.jpg);">
-
+                                <div style="<?php if($main['image_1'] != null){ ?>background-image: url(<?php echo $main['image_1'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img2.jpg);">
-
+                                <div style="<?php if($main['image_2'] != null){ ?>background-image: url(<?php echo $main['image_2'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img3.jpg);">
-
+                                <div style="<?php if($main['image_3'] != null){ ?>background-image: url(<?php echo $main['image_3'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img4.jpg);">
-
+                                <div style="<?php if($main['image_4'] != null){ ?>background-image: url(<?php echo $main['image_4'];?>);<?php }?>">
                                 </div>
                             </div>
                         </div>
-
                         <div class="items">
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img5.jpg);">
-
+                                <div style="<?php if($main['image_5'] != null){ ?>background-image: url(<?php echo $main['image_5'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img6.jpg);">
-
+                                <div style="<?php if($main['image_6'] != null){ ?>background-image: url(<?php echo $main['image_6'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img7.jpg);">
-
+                                <div style="<?php if($main['image_7'] != null){ ?>background-image: url(<?php echo $main['image_7'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(<?php bloginfo("template_directory");?>/images/img8.jpg);">
-
+                                <div style="<?php if($main['image_8'] != null){ ?>background-image: url(<?php echo $main['image_8'];?>);<?php }?>">
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="items">
                             <div class="item">
-                                <div style="">
-
+                                <div style="<?php if($main['image_9'] != null){ ?>background-image: url(<?php echo $main['image_9'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="">
-
+                                <div style="<?php if($main['image_10'] != null){ ?>background-image: url(<?php echo $main['image_10'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="">
-
+                                <div style="<?php if($main['image_11'] != null){ ?>background-image: url(<?php echo $main['image_11'];?>);<?php }?>">
                                 </div>
                             </div>
                             <div class="item">
-                                <div style="">
-
+                                <div style="<?php if($main['image_12'] != null){ ?>background-image: url(<?php echo $main['image_12'];?>);<?php }?>">
                                 </div>
                             </div>
                         </div>
@@ -105,7 +95,9 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="title reviews">Ваши отзывы</h2>
+                                <?php if($main['reviews'] != null){ ?>
+                                <h2 class="title reviews"><?php echo $main['reviews'];?></h2>
+                                <?php }?>
                             </div>
                         </div>
                     </div>
@@ -116,83 +108,111 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<!--                        --><?php //comments_template(); ?>
-<!--                        --><?php
-//                        while ( have_posts() ) : the_post();
-//                        if ( comments_open() || get_comments_number() ) :
-//                        comments_template();
-//                        endif;
-//                        endwhile;
-//                        ?>
 
                         <div class="reviews-slider">
-                            <div class="items">
+
+                        <?php
+                        $my_posts = get_posts('numberposts=0&post_type=reviews');
+                        $couter = 0;
+                        foreach ($my_posts as $post) :
+                            setup_postdata($post);
+
+                            ?>
+
+                            <?php if($couter == 0) {
+                                echo '<div class="items">';
+                                }?>
+
                                 <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
+                                    <div class="img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
+                                    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?>, </a><span><?php echo $reviews['city'];?></span></h4>
+                                    <p><?php echo get_the_excerpt(); ?></p>
                                 </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img"></div>
-                                    <h4>Имя, <span>Город</span></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>
-                                </div>
-                            </div>
+                            <!--Не работает если не доходит до трех-->
+                            <?php if($couter == 3){
+
+                                echo '</div>';
+
+                            } ?>
+
+                        <?php
+                            //var_dump($couter);
+                            $couter++;
+                            if($couter == 4){
+                                $couter = 0;
+                            }
+                        endforeach; ?>
                         </div>
+
+<!--                        <div class="reviews-slider">-->
+<!--                            <div class="items">-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!---->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="items">-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="items">-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                                <div class="item">-->
+<!--                                    <div class="img"></div>-->
+<!--                                    <h4>Имя, <span>Город</span></h4>-->
+<!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis unde, omnis odio aut corrupti. Iusto repellendus laudantium amet voluptatibus eos est provident enim nihil molestias rerum officiis culpa eligendi dolor beatae itaque ratione ipsa, atque in! Hic, sunt, aliquid.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
                         <p>Оригиналы всех отзывов Вы можете посмотреть в нашей группе<a href="https://vk.com/anhel.kids" target="_blank"><img src="<?php bloginfo("template_directory");?>/images/vk-reviews.png" alt="№"></a></p>
                     </div>
                 </div>
@@ -236,7 +256,9 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="title reviews">Из чего мы сделаны</h2>
+                                <?php if($main['iz_chego_mi_sdelany'] != null){ ?>
+                                <h2 class="title reviews"><?php echo $main['iz_chego_mi_sdelany'];?></h2>
+                                <?php }?>
                             </div>
                         </div>
                     </div>
@@ -342,20 +364,20 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="reviews-block">
-            <div class="reviews-content">
-                <div class="title reviews">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="title reviews">Контакты</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--        <div class="reviews-block">-->
+<!--            <div class="reviews-content">-->
+<!--                <div class="title reviews">-->
+<!--                    <div class="container">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+<!--                                <h2 class="title reviews">Контакты</h2>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
     <!--END CONTENT-->
 
     <!--START FOOTER-->
