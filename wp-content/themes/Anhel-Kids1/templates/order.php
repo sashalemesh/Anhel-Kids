@@ -41,6 +41,10 @@ get_header();
                 </div>
             </div>
         </div>
+
+        <?php echo do_shortcode('[woocommerce_cart]');
+        echo do_shortcode('[woocommerce_checkout]');?>
+
         <div class="orders">
             <div class="container">
                 <div class="row">

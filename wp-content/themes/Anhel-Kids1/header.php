@@ -20,6 +20,13 @@
 </head>
 
 <body>
+
+<?php
+//переработать для page.php1
+if ( is_page_template('page.php')) { ?>
+
+<div class="internal-pages">
+    <?php } ?>
 <?php
 if ( is_page_template('templates/order.php') || is_page_template('templates/gallery.php') || is_page_template('templates/catalog.php')) { ?>
 <div class="internal-pages">

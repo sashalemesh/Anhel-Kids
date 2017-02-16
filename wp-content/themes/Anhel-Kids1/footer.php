@@ -48,6 +48,12 @@ $footer = get_fields(27);
         </div>
     </div>
 </footer>
+
+<?php
+//переработать для page.php
+if ( is_page_template('page.php')) { ?>
+</div>
+<?php } ?>
 <?php
 if ( is_page_template('templates/order.php') || is_page_template('templates/construct.php') || is_page_template('templates/gallery.php') || is_page_template('templates/catalog.php')) { ?>
 </div>
