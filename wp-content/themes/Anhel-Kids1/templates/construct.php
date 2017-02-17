@@ -2,51 +2,8 @@
 /**Template name: construct_page */
 
 get_header();
-
+$construct = get_fields();
 ?>
-<!---->
-<!---->
-<!--    <body>-->
-<!--    <!--START HEADER-->-->
-<!--    <div class="internal-pages constructor">-->
-<!--        <header>-->
-<!--            <div class="container">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-<!--                        <ul class="menu">-->
-<!--                            <li class="logo">-->
-<!--                                <a href="#"><img src="--><?php //bloginfo("template_directory");?><!--/images/logotype.svg" alt=""></a>-->
-<!--                            </li>-->
-<!--                            <li class="constructor">-->
-<!--                                <a href="#">-->
-<!--                                    <p>Конструктор</p>-->
-<!--                                </a>-->
-<!--                            </li>-->
-<!--                            <li class="catalog">-->
-<!--                                <a href="#">-->
-<!--                                    <p>Каталог</p>-->
-<!--                                </a>-->
-<!--                            </li>-->
-<!--                            <li class="gallery">-->
-<!--                                <a href="#">-->
-<!--                                    <p>Галерея</p>-->
-<!--                                </a>-->
-<!--                            </li>-->
-<!--                            <li class="about-us">-->
-<!--                                <a href="#">-->
-<!--                                    <p>О нас</p>-->
-<!--                                </a>-->
-<!--                            </li>-->
-<!--                            <li class="vk">-->
-<!--                                <a href="https://vk.com/anhel.kids" target="_blank"><img src="--><?php //bloginfo("template_directory");?><!--/images/vk.svg" alt=""></a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </header>-->
-        <!--END HEADER-->
-
         <!--START CONTENT-->
 
         <section>
@@ -55,7 +12,7 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="title">Конструктор чехлов</h2>
+                                <h2 class="title"><?php the_title(); ?></h2>
                             </div>
                         </div>
                     </div>
@@ -66,8 +23,12 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="title">Шаг 1</h3>
-                                <h4 class="title">Выберите модель стульчика</h4>
+                                <?php if($construct['step_1'] != null){ ?>
+                                <h3 class="title"><?php echo $construct['step_1'];?></h3>
+                                <?php }?>
+                                <?php if($construct['text_1'] != null){ ?>
+                                <h4 class="title"><?php echo $construct['text_1'];?></h4>
+                                <?php }?>
                                 <div class="constructor-slider">
                                     <div class="constructor-items">
                                         <div class="constructor-item">
@@ -195,7 +156,9 @@ get_header();
                                 <div class="input no-my-model">
                                     <input type="radio" name="armchair" id="armchair-11">
                                     <label for="armchair-11"></label>
-                                    <label for="armchair-11">В списке нет моей модели стульчика</label>
+                                    <?php if($construct['if_not_chea'] != null){ ?>
+                                    <label for="armchair-11"><?php echo $construct['if_not_chea'];?></label>
+                                    <?php }?>
                                 </div>
                             </div>
                         </div>
@@ -205,8 +168,12 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="title">Шаг 2</h3>
-                                <h4 class="title">Выберите понравившуюся ткань</h4>
+                                <?php if($construct['step_2'] != null){ ?>
+                                <h3 class="title"><?php echo $construct['step_2'];?></h3>
+                                <?php }?>
+                                <?php if($construct['text_2'] != null){ ?>
+                                <h4 class="title"><?php echo $construct['text_2'];?></h4>
+                                <?php }?>
                                 <div class="the-cloth">
                                     <div>
                                         <div class="img" data-toggle="modal" data-target=".cloth-modal">
@@ -214,9 +181,13 @@ get_header();
                                                 <p>Нажмите <br> для выбора</p>
                                             </div>
                                         </div>
-                                        <h4 class="title">Сторона А</h4>
+                                        <?php if($construct['side_a'] != null){ ?>
+                                        <h4 class="title"><?php echo $construct['side_a'];?></h4>
+                                        <?php }?>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                                    <?php if($construct['side_a_text'] != null){ ?>
+                                    <?php echo $construct['side_a_text'];?>
+                                    <?php }?>
                                 </div>
                                 <div class="the-cloth">
                                     <div>
@@ -225,9 +196,13 @@ get_header();
                                                 <p>Нажмите <br> для выбора</p>
                                             </div>
                                         </div>
-                                        <h4 class="title">Сторона Б</h4>
+                                        <?php if($construct['side_b'] != null){ ?>
+                                            <h4 class="title"><?php echo $construct['side_b'];?></h4>
+                                        <?php }?>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                                    <?php if($construct['side_b_text'] != null){ ?>
+                                        <?php echo $construct['side_b_text'];?>
+                                    <?php }?>
                                 </div>
                             </div>
                         </div>
@@ -237,8 +212,12 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="title">Шаг 3</h3>
-                                <h4 class="title">Дополнительные аксессуары</h4>
+                                <?php if($construct['step_3'] != null){ ?>
+                                <h3 class="title"><?php echo $construct['step_3'];?></h3>
+                                <?php }?>
+                                <?php if($construct['text_3'] != null){ ?>
+                                <h4 class="title"><?php echo $construct['text_3'];?></h4>
+                                <?php }?>
                                 <div class="items">
                                     <div class="item">
                                         <div class="img" data-toggle="modal" data-target=".cloth-modal">
@@ -297,7 +276,7 @@ get_header();
                                                 <input type="checkbox" id="checkbox-2">
                                                 <label for="checkbox-2"></label>
                                                 <label for="checkbox-2">Накладки
-                                                    <br> на рмни</label>
+                                                    <br> на ремни</label>
                                             </div>
                                             <div class="description">
                                                 <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, assumenda.</p>
@@ -399,10 +378,21 @@ get_header();
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="title">Шаг 4</h3>
-                                <h4 class="title">Итог</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <h4 class="title">Вы выбрали:</h4>
+                                <?php if($construct['srep_4'] != null){ ?>
+                                <h3 class="title"><?php echo $construct['step_4'];?></h3>
+                                <?php }?>
+                                
+                                <?php if($construct['text_4'] != null){ ?>
+                                <h4 class="title"><?php echo $construct['text_4'];?></h4>
+                                <?php }?>
+                                <!--Начало Выводим итог-->
+                                <?php if (have_posts()) : while (have_posts()) :  the_post();?>
+                                <?php the_content(); ?>
+                                <?php endwhile; endif; ?>
+                                <!--Конец Выводим итог-->
+                                <?php if($construct['your_choice'] != null){ ?>
+                                <h4 class="title"><?php echo $construct['your_choice'];?></h4>
+                                <?php }?>
                                 <div class="constructor-item">
                                     <div class="cloud">
                                         <img src="<?php bloginfo("template_directory");?>/images/chair_1.png" alt="">

@@ -3,6 +3,7 @@ require_once ('lib/scripts.php');
 require_once ('lib/naw_menu.php');
 require_once ('lib/post_type.php');
 require_once ('lib/my_woocommerce.php');
+require_once ('lib/template_woocommerce.php');
 
 
 function my_kids_setup(){
@@ -44,4 +45,4 @@ add_filter('excerpt_more', function($more) {
 
 //checked the size:
 add_image_size( 'spec_thumb', 278, 216, true );
-add_image_size( 'spec_thumb1', 329.76, 257, true );
+add_image_size( 'spec_thumb1', 329, 257, true );

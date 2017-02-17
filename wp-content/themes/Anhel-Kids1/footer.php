@@ -29,21 +29,21 @@ $footer = get_fields(27);
                 <?php echo $footer['footer_text'];?>
                 <?php }?>
                 <!--Contact form 7-->
-<!--                --><?php //echo do_shortcode('[contact-form-7 id="86" title="contact form"]'); ?>
-                <form action="">
-                    <h4>Связаться с нами</h4>
-                    <div class="left-block">
-                        <input type="text" placeholder="Имя">
-                        <input type="email" placeholder="Email">
-                        <ul class="soc">
-                            <li><a href="https://vk.com/anhel.kids" target="_blank"><img src="<?php bloginfo("template_directory");?>/images/vk-forma.svg" alt=""></a></li>
-                            <li><a href="https://www.facebook.com/anhel.kids/" target="_blank"><img src="<?php bloginfo("template_directory");?>/images/facebook.svg" alt=""></a></li>
-                            <li><a href="https://www.instagram.com/anhel_kids/" target="_blank"><img src="<?php bloginfo("template_directory");?>/images/instagram.svg" alt=""></a></li>
-                        </ul>
-                        <input type="submit" value="Отправить">
-                    </div>
-                    <textarea placeholder="Сообщение"></textarea>
-                </form>
+                <?php echo do_shortcode('[contact-form-7 id="87" title="contact"]'); ?>
+<!--                <form action="">-->
+<!--                    <h4>Связаться с нами</h4>-->
+<!--                    <div class="left-block">-->
+<!--                        <input type="text" placeholder="Имя">-->
+<!--                        <input type="email" placeholder="Email">-->
+<!--                        <ul class="soc">-->
+<!--                            <li><a href="https://vk.com/anhel.kids" target="_blank"><img src="--><?php //bloginfo("template_directory");?><!--/images/vk-forma.svg" alt=""></a></li>-->
+<!--                            <li><a href="https://www.facebook.com/anhel.kids/" target="_blank"><img src="--><?php //bloginfo("template_directory");?><!--/images/facebook.svg" alt=""></a></li>-->
+<!--                            <li><a href="https://www.instagram.com/anhel_kids/" target="_blank"><img src="--><?php //bloginfo("template_directory");?><!--/images/instagram.svg" alt=""></a></li>-->
+<!--                        </ul>-->
+<!--                        <input type="submit" value="Отправить">-->
+<!--                    </div>-->
+<!--                    <textarea placeholder="Сообщение"></textarea>-->
+<!--                </form>-->
             </div>
         </div>
     </div>

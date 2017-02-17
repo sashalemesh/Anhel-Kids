@@ -18,16 +18,19 @@ get_header();
         <br>
         <br>
         <br>
-        <?php
-            global $post;
-        echo '<pre>';
-            var_dump($post->post_title);
-        echo '</pre>';
 
-        global $post;
-        echo '<pre>';
-        var_dump($post);
-        echo '</pre>';
+        <?php
+        do_action( 'woocommerce_before_single_product_summary' );
+
+//            global $post;
+//        echo '<pre>';
+//            var_dump($post->post_title);
+//        echo '</pre>';
+//
+//        global $post;
+//        echo '<pre>';
+//        var_dump($post);
+//        echo '</pre>';
         ?>
 
     <br>
