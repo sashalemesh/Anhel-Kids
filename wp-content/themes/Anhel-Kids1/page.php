@@ -1,5 +1,6 @@
 <?php
 get_header();
+the_post();
 ?>
 
 <p>werwerwerwerwerwrrwe1</p>
@@ -9,8 +10,8 @@ get_header();
 <br>
 <br>
 
-
-<duv>           </duv>
+<?php the_content(); ?>
+<div>           </div>
 
 
     <br>

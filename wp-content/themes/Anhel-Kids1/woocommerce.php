@@ -12,7 +12,7 @@ get_header();
     <br>
 
 
-    <duv>    <?php woocommerce_content(); ?>       </duv>
+    <div>    <?php woocommerce_content(); ?>       </div>
 <?php //echo do_shortcode('[add_to_cart id="99"]'); ?>
         <br>
         <br>
@@ -20,7 +20,7 @@ get_header();
         <br>
 
         <?php
-        do_action( 'woocommerce_before_single_product_summary' );
+        //do_action( 'woocommerce_before_single_product_summary' );
 
 //            global $post;
 //        echo '<pre>';

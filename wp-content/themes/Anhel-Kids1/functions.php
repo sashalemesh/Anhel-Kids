@@ -46,3 +46,4 @@ add_filter('excerpt_more', function($more) {
 //checked the size:
 add_image_size( 'spec_thumb', 278, 216, true );
 add_image_size( 'spec_thumb1', 329, 257, true );
+

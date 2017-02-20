@@ -1017,7 +1017,7 @@ class WC_Product {
 
 			if ( $this->is_on_sale() && $this->get_regular_price() ) {
 
-				$price .= $this->get_price_html_from_to( $display_regular_price, $display_price ) . $this->get_price_suffix();
+                $price .= $this->get_price_html_from_to( $display_regular_price, $display_price ) . $this->get_price_suffix();
 
 				$price = apply_filters( 'woocommerce_sale_price_html', $price, $this );
 

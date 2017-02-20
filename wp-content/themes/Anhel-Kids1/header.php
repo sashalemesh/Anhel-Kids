@@ -28,7 +28,7 @@ if ( is_page_template('page.php')) { ?>
 <div class="internal-pages">
     <?php } ?>
 <?php
-if ( is_page_template('templates/order.php') || is_page_template('templates/gallery.php') || is_page_template('templates/catalog.php')) { ?>
+if ( is_page_template('templates/order.php') || is_page_template('templates/gallery.php') || is_page_template('templates/catalog.php') || is_page_template('woocommerce.php')) { ?>
 <div class="internal-pages">
 <?php } ?>
     <?php
