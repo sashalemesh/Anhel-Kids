@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 20 2017 г., 17:58
+-- Время создания: Фев 20 2017 г., 22:56
 -- Версия сервера: 5.5.50
--- Версия PHP: 5.3.29
+-- Версия PHP: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `option_name` varchar(191) NOT NULL DEFAULT '',
   `option_value` longtext NOT NULL,
   `autoload` varchar(20) NOT NULL DEFAULT 'yes'
-) ENGINE=InnoDB AUTO_INCREMENT=644 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=648 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `wp_options`
@@ -209,7 +209,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (102, 'widget_calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (103, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (104, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(105, 'cron', 'a:9:{i:1487605185;a:1:{s:32:"woocommerce_cancel_unpaid_orders";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1487623124;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1487642612;a:1:{s:28:"woocommerce_cleanup_sessions";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1487646000;a:1:{s:27:"woocommerce_scheduled_sales";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1487666516;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1487667131;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1487685812;a:1:{s:30:"woocommerce_tracker_send_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1488844800;a:1:{s:25:"woocommerce_geoip_updater";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:7:"monthly";s:4:"args";a:0:{}s:8:"interval";i:2635200;}}}s:7:"version";i:2;}', 'yes'),
+(105, 'cron', 'a:9:{i:1487622486;a:1:{s:32:"woocommerce_cancel_unpaid_orders";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1487623124;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1487642612;a:1:{s:28:"woocommerce_cleanup_sessions";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1487646000;a:1:{s:27:"woocommerce_scheduled_sales";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1487666516;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1487667131;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1487685812;a:1:{s:30:"woocommerce_tracker_send_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1488844800;a:1:{s:25:"woocommerce_geoip_updater";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:7:"monthly";s:4:"args";a:0:{}s:8:"interval";i:2635200;}}}s:7:"version";i:2;}', 'yes'),
 (106, 'theme_mods_twentyseventeen', 'a:3:{s:18:"custom_css_post_id";i:-1;s:18:"nav_menu_locations";a:1:{s:6:"menu_1";i:2;}s:16:"sidebars_widgets";a:2:{s:4:"time";i:1487061298;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}}}}', 'yes'),
 (118, 'can_compress_scripts', '1', 'no'),
 (135, 'current_theme', 'Anhel-Kids1', 'yes'),
@@ -361,8 +361,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (410, 'product_cat_children', 'a:0:{}', 'yes'),
 (508, '_site_transient_timeout_browser_085a7441ba8d27acdeb0223d99655031', '1488107432', 'no'),
 (509, '_site_transient_browser_085a7441ba8d27acdeb0223d99655031', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"56.0.2924.87";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'no'),
-(510, '_transient_timeout_wc_report_sales_by_date', '1487675372', 'no'),
-(511, '_transient_wc_report_sales_by_date', 'a:14:{s:32:"fb3a40ec6679ad7baad14f9e6574852b";a:0:{}s:32:"b0c63d7f7be163e22017009c53ff6676";a:0:{}s:32:"f0bf3541562de59caf35d04c77f50d1b";a:0:{}s:32:"5442048340b820d8b89c1d68dea1d2d2";N;s:32:"fa214374bc6c686bbb1691a1218cb14e";a:0:{}s:32:"f5edb9f2c639aa41425f301821c129bb";a:0:{}s:32:"23c328e955604a30b6a2d5f4d8f74cc5";a:0:{}s:32:"36e2c4861d74ed46e868b2dfd1679d9f";a:0:{}s:32:"2c398232889ff232187cd5f2d14fc631";a:0:{}s:32:"c904815eba0f0be6ec45622ec7a9f438";a:0:{}s:32:"80e488f6420a20eefa2ed21b58fbe9f2";N;s:32:"59fc2aebecdc9faad95579e41e487aed";a:0:{}s:32:"77aa7b18534bcf4ec733496089de8306";a:0:{}s:32:"475a3be198bdc9dfe77d06d64a392645";a:0:{}}', 'no'),
+(510, '_transient_timeout_wc_report_sales_by_date', '1487705411', 'no'),
+(511, '_transient_wc_report_sales_by_date', 'a:21:{s:32:"fb3a40ec6679ad7baad14f9e6574852b";a:0:{}s:32:"b0c63d7f7be163e22017009c53ff6676";a:0:{}s:32:"f0bf3541562de59caf35d04c77f50d1b";a:0:{}s:32:"5442048340b820d8b89c1d68dea1d2d2";N;s:32:"fa214374bc6c686bbb1691a1218cb14e";a:0:{}s:32:"f5edb9f2c639aa41425f301821c129bb";a:0:{}s:32:"23c328e955604a30b6a2d5f4d8f74cc5";a:0:{}s:32:"36e2c4861d74ed46e868b2dfd1679d9f";a:0:{}s:32:"2c398232889ff232187cd5f2d14fc631";a:0:{}s:32:"c904815eba0f0be6ec45622ec7a9f438";a:0:{}s:32:"80e488f6420a20eefa2ed21b58fbe9f2";N;s:32:"59fc2aebecdc9faad95579e41e487aed";a:0:{}s:32:"77aa7b18534bcf4ec733496089de8306";a:0:{}s:32:"475a3be198bdc9dfe77d06d64a392645";a:0:{}s:32:"ce16be75994cbc169a27661833929fe6";a:0:{}s:32:"82058f815e88f062aa9367c3e3b70a38";a:0:{}s:32:"4ca9158e23e55c330609390e06cac577";a:0:{}s:32:"84797ee1c354216eb35eea031369c2e2";N;s:32:"94b8bda2ef0fd453f65cbc08678ceecc";a:0:{}s:32:"588079960484c69d54c0647515e1b5be";a:0:{}s:32:"fd9de757f2ea139e8fa6f7c5d902cb9d";a:0:{}}', 'no'),
 (512, '_transient_timeout_wc_admin_report', '1487666274', 'no'),
 (513, '_transient_wc_admin_report', 'a:2:{s:32:"5527fcd33311c83e2958eca91d57c2f9";a:0:{}s:32:"3e1df4eb44df228f8307bdc2f8af1aa3";a:0:{}}', 'no'),
 (524, '_transient_timeout_plugin_slugs', '1487589038', 'no'),
@@ -395,16 +395,18 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (625, '_transient_wc_product_children_118', 'a:2:{s:7:"visible";a:2:{i:0;i:136;i:1;i:137;}s:3:"all";a:2:{i:0;i:136;i:1;i:137;}}', 'no'),
 (626, '_transient_timeout_wc_var_prices_118', '1490176001', 'no'),
 (627, '_transient_wc_var_prices_118', '{"e1b88e1c9a8573a0fff4a38a491fcd6d":{"price":{"136":"400","137":"600"},"regular_price":{"136":"400","137":"600"},"sale_price":{"136":"400","137":"600"}},"f9e544f77b7eac7add281ef28ca5559f":{"price":{"136":"400","137":"600"},"regular_price":{"136":"400","137":"600"},"sale_price":{"136":"400","137":"600"}}}', 'no'),
-(628, '_transient_timeout_wc_term_counts', '1490176239', 'no'),
-(629, '_transient_wc_term_counts', 'a:1:{i:7;s:1:"3";}', 'no'),
-(630, '_transient_timeout_wc_related_116', '1487670639', 'no'),
+(628, '_transient_timeout_wc_term_counts', '1490207405', 'no'),
+(629, '_transient_wc_term_counts', 'a:2:{i:7;s:1:"3";i:11;s:1:"1";}', 'no'),
+(630, '_transient_timeout_wc_related_116', '1487706391', 'no'),
 (631, '_transient_wc_related_116', 'a:2:{i:0;s:3:"110";i:1;s:3:"118";}', 'no'),
-(633, '_transient_timeout_wc_related_118', '1487684255', 'no'),
+(633, '_transient_timeout_wc_related_118', '1487702732', 'no'),
 (634, '_transient_wc_related_118', 'a:2:{i:0;s:3:"110";i:1;s:3:"116";}', 'no'),
 (635, '_transient_timeout_wc_low_stock_count', '1490180972', 'no'),
 (636, '_transient_wc_low_stock_count', '0', 'no'),
 (637, '_transient_timeout_wc_outofstock_count', '1490180972', 'no'),
-(638, '_transient_wc_outofstock_count', '0', 'no');
+(638, '_transient_wc_outofstock_count', '0', 'no'),
+(645, '_transient_timeout_wc_related_101', '1487703366', 'no'),
+(646, '_transient_wc_related_101', 'a:0:{}', 'no');
 
 -- --------------------------------------------------------
 
@@ -417,7 +419,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) DEFAULT NULL,
   `meta_value` longtext
-) ENGINE=InnoDB AUTO_INCREMENT=1517 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1519 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `wp_postmeta`
@@ -432,7 +434,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6, 2, '_wp_trash_meta_time', '1486978380'),
 (7, 2, '_wp_desired_post_slug', 'sample-page'),
 (8, 8, '_edit_last', '1'),
-(9, 8, '_edit_lock', '1487598107:1'),
+(9, 8, '_edit_lock', '1487615869:1'),
 (10, 8, '_wp_page_template', 'templates/order.php'),
 (11, 10, '_edit_last', '1'),
 (12, 10, '_edit_lock', '1487581352:1'),
@@ -482,11 +484,11 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (59, 18, '_menu_item_xfn', ''),
 (60, 18, '_menu_item_url', ''),
 (62, 21, '_edit_last', '1'),
-(63, 21, '_edit_lock', '1487055043:1'),
+(63, 21, '_edit_lock', '1487620406:1'),
 (64, 21, '_wp_page_template', 'templates/gallery.php'),
 (65, 23, '_edit_last', '1'),
 (66, 23, '_wp_page_template', 'default'),
-(67, 23, '_edit_lock', '1487168414:1'),
+(67, 23, '_edit_lock', '1487619051:1'),
 (68, 26, '_edit_last', '1'),
 (69, 26, '_edit_lock', '1487064013:1'),
 (70, 27, '_edit_last', '1'),
@@ -1306,9 +1308,9 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (952, 89, 'layout', 'no_box'),
 (953, 89, 'hide_on_screen', 'a:1:{i:0;s:13:"custom_fields";}'),
 (954, 89, '_edit_lock', '1487321460:1'),
-(956, 90, '_edit_lock', '1487584287:1'),
-(957, 91, '_edit_lock', '1487588936:1'),
-(958, 92, '_edit_lock', '1487234382:1'),
+(956, 90, '_edit_lock', '1487617003:1'),
+(957, 91, '_edit_lock', '1487616033:1'),
+(958, 92, '_edit_lock', '1487616449:1'),
 (959, 96, 'sozdat_checol', ''),
 (960, 96, '_sozdat_checol', 'field_58a45f742ce9d'),
 (961, 10, 'sozdat_checol', 'Создать чехол'),
@@ -1809,11 +1811,13 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1499, 137, 'attribute_pa_color', 'green'),
 (1500, 137, 'attribute_pa_remen', 'kozha'),
 (1511, 91, '_edit_last', '1'),
-(1512, 91, '_wp_page_template', 'default'),
+(1512, 91, '_wp_page_template', 'templates/order.php'),
 (1513, 90, '_edit_last', '1'),
-(1514, 90, '_wp_page_template', 'default'),
+(1514, 90, '_wp_page_template', 'templates/catalog.php'),
 (1515, 118, '_price', '400'),
-(1516, 118, '_price', '600');
+(1516, 118, '_price', '600'),
+(1517, 92, '_edit_last', '1'),
+(1518, 92, '_wp_page_template', 'templates/order.php');
 
 -- --------------------------------------------------------
 
@@ -1845,7 +1849,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   `post_type` varchar(20) NOT NULL DEFAULT 'post',
   `post_mime_type` varchar(100) NOT NULL DEFAULT '',
   `comment_count` bigint(20) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=141 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=144 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `wp_posts`
@@ -1858,7 +1862,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (5, 1, '2017-02-13 11:52:28', '2017-02-13 08:52:28', '', 'new1', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2017-02-13 11:52:28', '2017-02-13 08:52:28', '', 4, 'http://anhel-kids1/2017/02/13/4-revision-v1/', 0, 'revision', '', 0),
 (6, 1, '2017-02-13 12:32:20', '2017-02-13 09:32:20', '', 'main', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2017-02-13 12:32:20', '2017-02-13 09:32:20', '', 4, 'http://anhel-kids1/2017/02/13/4-revision-v1/', 0, 'revision', '', 0),
 (7, 1, '2017-02-13 12:33:00', '2017-02-13 09:33:00', 'Это пример страницы. От записей в блоге она отличается тем, что остаётся на одном месте и отображается в меню сайта (в большинстве тем). На странице &laquo;Детали&raquo; владельцы сайтов обычно рассказывают о себе потенциальным посетителям. Например, так:\n\n<blockquote>Привет! Днём я курьер, а вечером &#8212; подающий надежды актёр. Это мой блог. Я живу в Ростове-на-Дону, люблю своего пса Джека и пинаколаду. (И ещё попадать под дождь.)</blockquote>\n\n...или так:\n\n<blockquote>Компания &laquo;Штучки XYZ&raquo; была основана в 1971 году и с тех пор производит качественные штучки. Компания находится в Готэм-сити, имеет штат из более чем 2000 сотрудников и приносит много пользы жителям Готэма.</blockquote>\n\nПерейдите <a href="http://anhel-kids1/wp-admin/">в консоль</a>, чтобы удалить эту страницу и создать новые. Успехов!', 'Пример страницы', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-02-13 12:33:00', '2017-02-13 09:33:00', '', 2, 'http://anhel-kids1/2017/02/13/2-revision-v1/', 0, 'revision', '', 0),
-(8, 1, '2017-02-13 12:33:24', '2017-02-13 09:33:24', '[woocommerce_cart]', 'order', '', 'publish', 'closed', 'closed', '', 'order', '', '', '2017-02-15 17:29:34', '2017-02-15 14:29:34', '', 0, 'http://anhel-kids1/?page_id=8', 0, 'page', '', 0),
+(8, 1, '2017-02-13 12:33:24', '2017-02-13 09:33:24', '[woocommerce_cart]', 'order', '', 'publish', 'closed', 'closed', '', 'order', '', '', '2017-02-20 21:40:11', '2017-02-20 18:40:11', '', 0, 'http://anhel-kids1/?page_id=8', 0, 'page', '', 0),
 (9, 1, '2017-02-13 12:33:24', '2017-02-13 09:33:24', '', 'order', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2017-02-13 12:33:24', '2017-02-13 09:33:24', '', 8, 'http://anhel-kids1/2017/02/13/8-revision-v1/', 0, 'revision', '', 0),
 (10, 1, '2017-02-13 13:09:41', '2017-02-13 10:09:41', '', 'Каталог готовой продукции', '', 'publish', 'closed', 'closed', '', 'catalog', '', '', '2017-02-17 11:53:07', '2017-02-17 08:53:07', '', 0, 'http://anhel-kids1/?page_id=10', 0, 'page', '', 0),
 (11, 1, '2017-02-13 13:09:41', '2017-02-13 10:09:41', '', 'catalog', '', 'inherit', 'closed', 'closed', '', '10-revision-v1', '', '', '2017-02-13 13:09:41', '2017-02-13 10:09:41', '', 10, 'http://anhel-kids1/2017/02/13/10-revision-v1/', 0, 'revision', '', 0),
@@ -1934,9 +1938,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (87, 1, '2017-02-15 16:08:02', '2017-02-15 13:08:02', '<h4>Связаться с нами</h4>\r\n                    <div class="left-block">\r\n                        [text* text placeholder "Имя"]\r\n                        [email* email placeholder "Email"]\r\n                        <ul class="soc">\r\n                            <li><a href="https://vk.com/anhel.kids" target="_blank"><img src="http://anhel-kids/wp-content/themes/Anhel-Kids1/images/vk-forma.svg" alt=""></a></li>\r\n                            <li><a href="https://www.facebook.com/anhel.kids/" target="_blank"><img src="http://anhel-kids/wp-content/themes/Anhel-Kids1/images/facebook.svg" alt=""></a></li>\r\n                            <li><a href="https://www.instagram.com/anhel_kids/" target="_blank"><img src="http://anhel-kids/wp-content/themes/Anhel-Kids1/images/instagram.svg" alt=""></a></li>\r\n                        </ul>\r\n                        [submit "Отправить"]\r\n                    </div>\r\n                    [textarea textarea placeholder "Сообщение"]\nAnhel-Kids "[your-subject]"\n[text] <wordpress@anhel-kids>\nFrom: [text] <[email]>\r\nSubject: [your-subject]\r\n\r\nMessage Body:\r\n[textarea]\r\n\r\n--\r\nThis e-mail was sent from a contact form on Anhel-Kids (http://anhel-kids)\nAnhel-Kids1@mail.ru\nReply-To: [email]\n\n\n\n\nAnhel-Kids "[your-subject]"\nAnhel-Kids <wordpress@anhel-kids>\nMessage Body:\r\n[your-message]\r\n\r\n--\r\nThis e-mail was sent from a contact form on Anhel-Kids (http://anhel-kids)\n[your-email]\nReply-To: Anhel-Kids1@mail.ru\n\n\n\nThank you for your message. It has been sent.\nThere was an error trying to send your message. Please try again later.\nOne or more fields have an error. Please check and try again.\nThere was an error trying to send your message. Please try again later.\nYou must accept the terms and conditions before sending your message.\nThe field is required.\nThe field is too long.\nThe field is too short.\nThe date format is incorrect.\nThe date is before the earliest one allowed.\nThe date is after the latest one allowed.\nThere was an unknown error uploading the file.\nYou are not allowed to upload files of this type.\nThe file is too big.\nThere was an error uploading the file.\nThe number format is invalid.\nThe number is smaller than the minimum allowed.\nThe number is larger than the maximum allowed.\nThe answer to the quiz is incorrect.\nYour entered code is incorrect.\nThe e-mail address entered is invalid.\nThe URL is invalid.\nThe telephone number is invalid.', 'contact', '', 'publish', 'closed', 'closed', '', 'contact', '', '', '2017-02-17 11:05:36', '2017-02-17 08:05:36', '', 0, 'http://anhel-kids/?post_type=wpcf7_contact_form&#038;p=87', 0, 'wpcf7_contact_form', '', 0),
 (88, 1, '2017-02-15 16:49:04', '2017-02-15 13:49:04', '', 'main', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2017-02-15 16:49:04', '2017-02-15 13:49:04', '', 4, 'http://anhel-kids/2017/02/15/4-revision-v1/', 0, 'revision', '', 0),
 (89, 1, '2017-02-15 17:02:59', '2017-02-15 14:02:59', '', 'catalog', '', 'publish', 'closed', 'closed', '', 'acf_catalog', '', '', '2017-02-17 11:53:22', '2017-02-17 08:53:22', '', 0, 'http://anhel-kids/?post_type=acf&#038;p=89', 0, 'acf', '', 0),
-(90, 1, '2017-02-15 17:04:37', '2017-02-15 14:04:37', '', 'Shop', '', 'publish', 'closed', 'closed', '', 'shop', '', '', '2017-02-20 12:02:01', '2017-02-20 09:02:01', '', 0, 'http://anhel-kids/shop/', 0, 'page', '', 0),
-(91, 1, '2017-02-15 17:04:37', '2017-02-15 14:04:37', '[woocommerce_cart]', 'Cart', '', 'publish', 'closed', 'closed', '', 'cart', '', '', '2017-02-19 17:30:56', '2017-02-19 14:30:56', '', 0, 'http://anhel-kids/cart/', 0, 'page', '', 0),
-(92, 1, '2017-02-15 17:04:37', '2017-02-15 14:04:37', '[woocommerce_checkout]', 'Checkout', '', 'publish', 'closed', 'closed', '', 'checkout', '', '', '2017-02-19 17:30:23', '2017-02-19 14:30:23', '', 0, 'http://anhel-kids/checkout/', 0, 'page', '', 0),
+(90, 1, '2017-02-15 17:04:37', '2017-02-15 14:04:37', '', 'Shop', '', 'publish', 'closed', 'closed', '', 'shop', '', '', '2017-02-20 21:55:04', '2017-02-20 18:55:04', '', 0, 'http://anhel-kids/shop/', 0, 'page', '', 0),
+(91, 1, '2017-02-15 17:04:37', '2017-02-15 14:04:37', '[woocommerce_cart]', 'Cart', '', 'publish', 'closed', 'closed', '', 'cart', '', '', '2017-02-20 21:42:55', '2017-02-20 18:42:55', '', 0, 'http://anhel-kids/cart/', 0, 'page', '', 0),
+(92, 1, '2017-02-15 17:04:37', '2017-02-15 14:04:37', '[woocommerce_checkout]', 'Checkout', '', 'publish', 'closed', 'closed', '', 'checkout', '', '', '2017-02-20 21:48:22', '2017-02-20 18:48:22', '', 0, 'http://anhel-kids/checkout/', 0, 'page', '', 0),
 (93, 1, '2017-02-15 17:04:37', '2017-02-15 14:04:37', '[woocommerce_my_account]', 'My Account', '', 'publish', 'closed', 'closed', '', 'my-account', '', '', '2017-02-15 17:04:37', '2017-02-15 14:04:37', '', 0, 'http://anhel-kids/my-account/', 0, 'page', '', 0),
 (94, 1, '2017-02-15 17:05:44', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2017-02-15 17:05:44', '0000-00-00 00:00:00', '', 0, 'http://anhel-kids/?post_type=product&p=94', 0, 'product', '', 0),
 (95, 1, '2017-02-15 17:29:34', '2017-02-15 14:29:34', '[woocommerce_cart]', 'order', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2017-02-15 17:29:34', '2017-02-15 14:29:34', '', 8, 'http://anhel-kids/2017/02/15/8-revision-v1/', 0, 'revision', '', 0),
@@ -1984,7 +1988,10 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (137, 1, '2017-02-19 14:18:51', '2017-02-19 11:18:51', '', 'Variation #137 of Польский хлопок БО22', '', 'publish', 'closed', 'closed', '', 'product-118-variation-2', '', '', '2017-02-19 14:19:11', '2017-02-19 11:19:11', '', 118, 'http://anhel-kids/product/polskij-hlopok-bo22/', 1, 'product_variation', '', 0),
 (138, 1, '2017-02-19 14:45:38', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2017-02-19 14:45:38', '0000-00-00 00:00:00', '', 0, 'http://anhel-kids/?post_type=product&p=138', 0, 'product', '', 0),
 (139, 1, '2017-02-20 11:53:56', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-02-20 11:53:56', '0000-00-00 00:00:00', '', 0, 'http://anhel-kids/?p=139', 0, 'post', '', 0),
-(140, 1, '2017-02-20 12:01:08', '2017-02-20 09:01:08', '', 'Shop', '', 'inherit', 'closed', 'closed', '', '90-revision-v1', '', '', '2017-02-20 12:01:08', '2017-02-20 09:01:08', '', 90, 'http://anhel-kids/2017/02/20/90-revision-v1/', 0, 'revision', '', 0);
+(140, 1, '2017-02-20 12:01:08', '2017-02-20 09:01:08', '', 'Shop', '', 'inherit', 'closed', 'closed', '', '90-revision-v1', '', '', '2017-02-20 12:01:08', '2017-02-20 09:01:08', '', 90, 'http://anhel-kids/2017/02/20/90-revision-v1/', 0, 'revision', '', 0),
+(141, 1, '2017-02-20 21:39:08', '2017-02-20 18:39:08', '', 'order', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2017-02-20 21:39:08', '2017-02-20 18:39:08', '', 8, 'http://anhel-kids/2017/02/20/8-revision-v1/', 0, 'revision', '', 0),
+(142, 1, '2017-02-20 21:40:10', '2017-02-20 18:40:10', '[woocommerce_cart]', 'order', '', 'inherit', 'closed', 'closed', '', '8-autosave-v1', '', '', '2017-02-20 21:40:10', '2017-02-20 18:40:10', '', 8, 'http://anhel-kids/2017/02/20/8-autosave-v1/', 0, 'revision', '', 0),
+(143, 1, '2017-02-20 21:40:11', '2017-02-20 18:40:11', '[woocommerce_cart]', 'order', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2017-02-20 21:40:11', '2017-02-20 18:40:11', '', 8, 'http://anhel-kids/2017/02/20/8-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -2165,7 +2172,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (24, 1, 'closedpostboxes_reviews', 'a:0:{}'),
 (25, 1, 'metaboxhidden_reviews', 'a:6:{i:0;s:6:"acf_29";i:1;s:6:"acf_49";i:2;s:11:"postexcerpt";i:3;s:16:"commentstatusdiv";i:4;s:7:"slugdiv";i:5;s:9:"authordiv";}'),
 (26, 1, 'manageedit-shop_ordercolumnshidden', 'a:1:{i:0;s:15:"billing_address";}'),
-(27, 1, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:4:{s:32:"b7d92e2a00fbba3048c72aba4ef209e1";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:136;s:9:"variation";a:2:{s:18:"attribute_pa_color";s:4:"blue";s:18:"attribute_pa_remen";s:7:"dzhinsy";}s:8:"quantity";i:1;s:10:"line_total";d:400;s:8:"line_tax";i:0;s:13:"line_subtotal";i:400;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"c45147dee729311ef5b5c3003946c48f";a:9:{s:10:"product_id";i:116;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:350;s:8:"line_tax";i:0;s:13:"line_subtotal";i:350;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"5f93f983524def3dca464469d2cf9f3e";a:9:{s:10:"product_id";i:110;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:250;s:8:"line_tax";i:0;s:13:"line_subtotal";i:250;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"38b3eff8baf56627478ec76a704e9b52";a:9:{s:10:"product_id";i:101;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:200;s:8:"line_tax";i:0;s:13:"line_subtotal";i:200;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}}'),
+(27, 1, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:4:{s:32:"5ef059938ba799aaa845e1c2e8a762bd";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:400;s:8:"line_tax";i:0;s:13:"line_subtotal";i:400;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"38b3eff8baf56627478ec76a704e9b52";a:9:{s:10:"product_id";i:101;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:5;s:10:"line_total";d:1000;s:8:"line_tax";i:0;s:13:"line_subtotal";i:1000;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"9e87018412e0dd58ab7da6b5a895fae5";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:137;s:9:"variation";a:2:{s:18:"attribute_pa_color";s:5:"green";s:18:"attribute_pa_remen";s:5:"kozha";}s:8:"quantity";i:1;s:10:"line_total";d:600;s:8:"line_tax";i:0;s:13:"line_subtotal";i:600;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"c45147dee729311ef5b5c3003946c48f";a:9:{s:10:"product_id";i:116;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:5;s:10:"line_total";d:1750;s:8:"line_tax";i:0;s:13:"line_subtotal";i:1750;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}}'),
 (28, 1, 'closedpostboxes_product', 'a:0:{}'),
 (29, 1, 'metaboxhidden_product', 'a:7:{i:0;s:6:"acf_89";i:1;s:7:"acf_122";i:2;s:6:"acf_29";i:3;s:6:"acf_49";i:4;s:6:"acf_73";i:5;s:10:"postcustom";i:6;s:7:"slugdiv";}'),
 (30, 1, 'meta-box-order_product', 'a:4:{s:15:"acf_after_title";s:0:"";s:4:"side";s:84:"submitdiv,product_catdiv,tagsdiv-product_tag,postimagediv,woocommerce-product-images";s:6:"normal";s:103:"woocommerce-product-data,acf_89,acf_122,acf_29,acf_49,acf_73,postcustom,postexcerpt,slugdiv,commentsdiv";s:8:"advanced";s:0:"";}'),
@@ -2323,7 +2330,7 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_sessions` (
   `session_key` char(32) NOT NULL,
   `session_value` longtext NOT NULL,
   `session_expiry` bigint(20) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `wp_woocommerce_sessions`
@@ -2331,7 +2338,7 @@ CREATE TABLE IF NOT EXISTS `wp_woocommerce_sessions` (
 
 INSERT INTO `wp_woocommerce_sessions` (`session_id`, `session_key`, `session_value`, `session_expiry`) VALUES
 (66, '1', 'a:21:{s:4:"cart";s:1285:"a:4:{s:32:"b7d92e2a00fbba3048c72aba4ef209e1";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:136;s:9:"variation";a:2:{s:18:"attribute_pa_color";s:4:"blue";s:18:"attribute_pa_remen";s:7:"dzhinsy";}s:8:"quantity";i:1;s:10:"line_total";d:400;s:8:"line_tax";i:0;s:13:"line_subtotal";i:400;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"c45147dee729311ef5b5c3003946c48f";a:9:{s:10:"product_id";i:116;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:350;s:8:"line_tax";i:0;s:13:"line_subtotal";i:350;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"5f93f983524def3dca464469d2cf9f3e";a:9:{s:10:"product_id";i:110;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:250;s:8:"line_tax";i:0;s:13:"line_subtotal";i:250;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"38b3eff8baf56627478ec76a704e9b52";a:9:{s:10:"product_id";i:101;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:200;s:8:"line_tax";i:0;s:13:"line_subtotal";i:200;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}";s:15:"applied_coupons";s:6:"a:0:{}";s:23:"coupon_discount_amounts";s:6:"a:0:{}";s:27:"coupon_discount_tax_amounts";s:6:"a:0:{}";s:21:"removed_cart_contents";s:906:"a:3:{s:32:"38b3eff8baf56627478ec76a704e9b52";a:9:{s:10:"product_id";i:101;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:3;s:10:"line_total";d:600;s:8:"line_tax";i:0;s:13:"line_subtotal";i:600;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"5ef059938ba799aaa845e1c2e8a762bd";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:2;s:10:"line_total";d:800;s:8:"line_tax";i:0;s:13:"line_subtotal";i:800;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"5f93f983524def3dca464469d2cf9f3e";a:9:{s:10:"product_id";i:110;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:2;s:10:"line_total";d:500;s:8:"line_tax";i:0;s:13:"line_subtotal";i:500;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}";s:19:"cart_contents_total";d:1200;s:5:"total";d:1200;s:8:"subtotal";i:1200;s:15:"subtotal_ex_tax";i:1200;s:9:"tax_total";i:0;s:5:"taxes";s:6:"a:0:{}";s:14:"shipping_taxes";s:6:"a:0:{}";s:13:"discount_cart";i:0;s:17:"discount_cart_tax";i:0;s:14:"shipping_total";N;s:18:"shipping_tax_total";i:0;s:9:"fee_total";i:0;s:4:"fees";s:6:"a:0:{}";s:21:"chosen_payment_method";s:4:"bacs";s:8:"customer";s:379:"a:14:{s:8:"postcode";s:0:"";s:4:"city";s:0:"";s:9:"address_1";s:0:"";s:9:"address_2";s:0:"";s:5:"state";s:0:"";s:7:"country";s:2:"UA";s:17:"shipping_postcode";s:0:"";s:13:"shipping_city";s:0:"";s:18:"shipping_address_1";s:0:"";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:0:"";s:16:"shipping_country";s:2:"UA";s:13:"is_vat_exempt";b:0;s:19:"calculated_shipping";b:1;}";s:10:"wc_notices";N;}', 1487744265),
-(42, 'd999c981e16e9aa59f7c71c9238b3347', 'a:19:{s:4:"cart";s:606:"a:2:{s:32:"5ef059938ba799aaa845e1c2e8a762bd";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:400;s:8:"line_tax";i:0;s:13:"line_subtotal";i:400;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"38b3eff8baf56627478ec76a704e9b52";a:9:{s:10:"product_id";i:101;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:3;s:10:"line_total";d:600;s:8:"line_tax";i:0;s:13:"line_subtotal";i:600;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}";s:15:"applied_coupons";s:6:"a:0:{}";s:23:"coupon_discount_amounts";s:6:"a:0:{}";s:27:"coupon_discount_tax_amounts";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:19:"cart_contents_total";d:1000;s:5:"total";d:1000;s:8:"subtotal";i:1000;s:15:"subtotal_ex_tax";i:1000;s:9:"tax_total";i:0;s:5:"taxes";s:6:"a:0:{}";s:14:"shipping_taxes";s:6:"a:0:{}";s:13:"discount_cart";i:0;s:17:"discount_cart_tax";i:0;s:14:"shipping_total";N;s:18:"shipping_tax_total";i:0;s:9:"fee_total";i:0;s:4:"fees";s:6:"a:0:{}";s:10:"wc_notices";N;}', 1487675294);
+(82, 'd999c981e16e9aa59f7c71c9238b3347', 'a:21:{s:4:"cart";s:1288:"a:4:{s:32:"5ef059938ba799aaa845e1c2e8a762bd";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";d:400;s:8:"line_tax";i:0;s:13:"line_subtotal";i:400;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"38b3eff8baf56627478ec76a704e9b52";a:9:{s:10:"product_id";i:101;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:5;s:10:"line_total";d:1000;s:8:"line_tax";i:0;s:13:"line_subtotal";i:1000;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"9e87018412e0dd58ab7da6b5a895fae5";a:9:{s:10:"product_id";i:118;s:12:"variation_id";i:137;s:9:"variation";a:2:{s:18:"attribute_pa_color";s:5:"green";s:18:"attribute_pa_remen";s:5:"kozha";}s:8:"quantity";i:1;s:10:"line_total";d:600;s:8:"line_tax";i:0;s:13:"line_subtotal";i:600;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}s:32:"c45147dee729311ef5b5c3003946c48f";a:9:{s:10:"product_id";i:116;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:5;s:10:"line_total";d:1750;s:8:"line_tax";i:0;s:13:"line_subtotal";i:1750;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}";s:15:"applied_coupons";s:6:"a:0:{}";s:23:"coupon_discount_amounts";s:6:"a:0:{}";s:27:"coupon_discount_tax_amounts";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:19:"cart_contents_total";d:3750;s:5:"total";d:3750;s:8:"subtotal";i:3750;s:15:"subtotal_ex_tax";i:3750;s:9:"tax_total";i:0;s:5:"taxes";s:6:"a:0:{}";s:14:"shipping_taxes";s:6:"a:0:{}";s:13:"discount_cart";i:0;s:17:"discount_cart_tax";i:0;s:14:"shipping_total";N;s:18:"shipping_tax_total";i:0;s:9:"fee_total";i:0;s:4:"fees";s:6:"a:0:{}";s:10:"wc_notices";N;s:21:"chosen_payment_method";s:4:"bacs";s:8:"customer";s:379:"a:14:{s:8:"postcode";s:0:"";s:4:"city";s:0:"";s:9:"address_1";s:0:"";s:9:"address_2";s:0:"";s:5:"state";s:0:"";s:7:"country";s:2:"UA";s:17:"shipping_postcode";s:0:"";s:13:"shipping_city";s:0:"";s:18:"shipping_address_1";s:0:"";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:0:"";s:16:"shipping_country";s:2:"UA";s:13:"is_vat_exempt";b:0;s:19:"calculated_shipping";b:1;}";}', 1487675294);
 
 -- --------------------------------------------------------
 
@@ -2630,17 +2637,17 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT для таблицы `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=644;
+  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=648;
 --
 -- AUTO_INCREMENT для таблицы `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1517;
+  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1519;
 --
 -- AUTO_INCREMENT для таблицы `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=141;
+  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=144;
 --
 -- AUTO_INCREMENT для таблицы `wp_termmeta`
 --
@@ -2705,7 +2712,7 @@ ALTER TABLE `wp_woocommerce_payment_tokens`
 -- AUTO_INCREMENT для таблицы `wp_woocommerce_sessions`
 --
 ALTER TABLE `wp_woocommerce_sessions`
-  MODIFY `session_id` bigint(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=67;
+  MODIFY `session_id` bigint(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=83;
 --
 -- AUTO_INCREMENT для таблицы `wp_woocommerce_shipping_zones`
 --

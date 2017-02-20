@@ -64,7 +64,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								esc_attr( $_product->get_sku() )
 							), $cart_item_key );
 						?>
-<!--					</td>-->
+					</td>
 					<!--Выводит картинки (thumbnail)-->
 					<td class="product-thumbnail">
 						<?php

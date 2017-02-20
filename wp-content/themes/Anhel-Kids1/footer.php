@@ -51,16 +51,12 @@ $footer = get_fields(27);
 
 <?php
 //переработать для page.php
-if ( is_page_template('page.php')) { ?>
+if ( !is_page_template('templates/main.php')) { ?>
 </div>
 <?php } ?>
-<?php
-if ( is_page_template('templates/order.php') || is_page_template('templates/construct.php') || is_page_template('templates/gallery.php') || is_page_template('templates/catalog.php') || is_page_template('woocommerce.php')) { ?>
-</div>
-    <?php } ?>
-<?php //if ( is_page_template('templates/order.php') or is_page_template('templates/construct.php')) { ?>
-<!--</div>-->
-<?php //} ?>
+
+
+
 
 
 <!--END FOOTER-->

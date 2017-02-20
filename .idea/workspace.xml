@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="340fa7ef-07e4-4a1e-b796-81d2bd84cec5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/my_woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/my_woocommerce.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/gallery.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/gallery.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/content-product.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/content-product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart.php" afterPath="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart.php" />
     </list>
     <ignored path="Anhel-Kids1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,44 +31,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="order.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="213" column="125" selection-start-line="213" selection-start-column="125" selection-end-line="213" selection-end-column="125" />
+            <state relative-caret-position="658">
+              <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#1702#1715#0#PHP" expanded="true" />
+                <element signature="e#3058#3135#0#PHP" expanded="true" />
+                <element signature="e#4703#4722#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form-billing.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-billing.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="56" column="87" selection-start-line="56" selection-start-column="87" selection-end-line="56" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-wc-shortcodes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
-              <caret line="475" column="0" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="review-order.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/review-order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -75,26 +48,10 @@
       <file leaf-file-name="cart.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
+            <state relative-caret-position="202">
+              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="66" selection-end-column="25" />
               <folding>
-                <marker date="1487599951904" expanded="true" signature="2458:2916" ph="..." />
-                <marker date="1487599951904" expanded="true" signature="2460:2901" ph="..." />
-                <marker date="1487599951904" expanded="true" signature="2663:2670" ph="×" />
-                <marker date="1487599951904" expanded="true" signature="5392:5667" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart-totals.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart-totals.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="64" />
-              <folding>
-                <element signature="e#6#644#0#PHP" expanded="true" />
-                <element signature="e#2925#2995#0#PHP" expanded="true" />
+                <marker date="1487620356585" expanded="true" signature="2663:2670" ph="×" />
               </folding>
             </state>
           </provider>
@@ -103,8 +60,8 @@
       <file leaf-file-name="content-product.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/content-product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+            <state relative-caret-position="1325">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="e#897#1014#0#PHP" expanded="true" />
               </folding>
@@ -112,34 +69,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wc-template-hooks.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-hooks.php">
+      <file leaf-file-name="woocommerce.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="214" column="75" selection-start-line="214" selection-start-column="45" selection-end-line="214" selection-end-column="75" />
+            <state relative-caret-position="525">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wc-template-functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="1342" column="47" selection-start-line="1342" selection-start-column="32" selection-end-line="1342" selection-end-column="47" />
-              <folding>
-                <marker date="1487338739647" expanded="true" signature="41025:41103" ph="SELECT term_... $" />
-                <marker date="1487338739647" expanded="true" signature="50756:50769" ph="..." />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cross-sells.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/cart/cross-sells.php">
+      <file leaf-file-name="my_woocommerce.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/my_woocommerce.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+            <state relative-caret-position="332">
+              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wc-template-hooks.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-hooks.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="212" column="48" selection-start-line="212" selection-start-column="48" selection-end-line="212" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -160,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/functions123321.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/main.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/payment-method.php" />
@@ -182,12 +145,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/loop/loop-start.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/loop/loop-end.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/loop/price.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/loop/result-count.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/content-product.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-product_cat.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-single-product.php" />
@@ -199,18 +158,23 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-pay.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/order/order-details.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/my_woocommerce.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/cart/cart-totals.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/cart/cart.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart-totals.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-billing.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-login.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/review-order.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/my_woocommerce.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/gallery.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart.php" />
       </list>
     </option>
   </component>
@@ -222,10 +186,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -534,8 +498,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -621,21 +585,21 @@
       <workItem from="1487312117463" duration="26697000" />
       <workItem from="1487502313946" duration="12258000" />
       <workItem from="1487571556367" duration="22446000" />
+      <workItem from="1487615324258" duration="5232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135853000" />
+    <option name="totallyTimeSpent" value="141085000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2056928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20896329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -646,6 +610,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -662,18 +627,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-end.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/price.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -694,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +669,7 @@
         <state relative-caret-position="-484">
           <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
           <folding>
-            <element signature="e#3816#3927#0#HTML" expanded="true" />
+            <element signature="e#3816#3927#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,22 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="57" column="181" selection-start-line="57" selection-start-column="181" selection-end-line="57" selection-end-column="220" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="173" selection-start-line="30" selection-start-column="173" selection-end-line="30" selection-end-column="173" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/loop/result-count.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -772,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/loop/loop-start.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -792,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-711">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-179">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,10 +810,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1487589394124" expanded="true" signature="3770:4369" ph="..." />
-            <marker date="1487589394124" expanded="true" signature="3903:4365" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -923,23 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,33 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <marker date="1487167159407" expanded="true" signature="2357:2364" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <marker date="1487583883525" expanded="true" signature="3632:3682" ph="..." />
-            <marker date="1487583883525" expanded="false" signature="4001:4080" ph="..." />
-            <marker date="1487583883525" expanded="false" signature="4844:4923" ph="..." />
-            <marker date="1487583883525" expanded="false" signature="5687:5764" ph="..." />
-            <marker date="1487583883525" expanded="false" signature="6528:6607" ph="..." />
-            <marker date="1487583883525" expanded="false" signature="7371:7450" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/my_woocommerce.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,13 +864,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="102" column="67" selection-start-line="102" selection-start-column="67" selection-end-line="102" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/cart/cross-sells.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
+        <state relative-caret-position="425">
           <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
           <folding />
         </state>
@@ -995,12 +877,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="33325">
           <caret line="1342" column="47" selection-start-line="1342" selection-start-column="32" selection-end-line="1342" selection-end-column="47" />
-          <folding>
-            <marker date="1487338739647" expanded="true" signature="41025:41103" ph="SELECT term_... $" />
-            <marker date="1487338739647" expanded="true" signature="50756:50769" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,38 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-hooks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="214" column="75" selection-start-line="214" selection-start-column="45" selection-end-line="214" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/content-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-          <folding>
-            <element signature="e#897#1014#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
-          <folding>
-            <marker date="1487599951904" expanded="true" signature="2458:2916" ph="..." />
-            <marker date="1487599951904" expanded="true" signature="2460:2901" ph="..." />
-            <marker date="1487599951904" expanded="true" signature="2663:2670" ph="×" />
-            <marker date="1487599951904" expanded="true" signature="5392:5667" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,18 +895,8 @@
         <state relative-caret-position="465">
           <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="64" />
           <folding>
-            <element signature="e#6#644#0#PHP" expanded="true" />
-            <element signature="e#2925#2995#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="213" column="125" selection-start-line="213" selection-start-column="125" selection-end-line="213" selection-end-column="125" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#6#644#0#PHP" expanded="false" />
+            <element signature="e#2925#2995#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,15 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1533" selection-start-line="0" selection-start-column="1533" selection-end-line="0" selection-end-column="1533" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-billing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="56" column="87" selection-start-line="56" selection-start-column="87" selection-end-line="56" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,8 +918,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
+        <state relative-caret-position="25">
           <caret line="475" column="0" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-billing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="56" column="87" selection-start-line="56" selection-start-column="87" selection-end-line="56" selection-end-column="87" />
           <folding />
         </state>
       </provider>
@@ -1101,6 +937,114 @@
         <state relative-caret-position="44">
           <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/lib/my_woocommerce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="e#606#665#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-hooks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="212" column="48" selection-start-line="212" selection-start-column="48" selection-end-line="212" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/catalog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="e#332#366#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/content-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#897#1014#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/woocommerce/cart/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="66" selection-end-column="25" />
+          <folding>
+            <marker date="1487620356585" expanded="true" signature="2663:2670" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/Anhel-Kids1/templates/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+          <folding>
+            <element signature="e#1702#1715#0#PHP" expanded="true" />
+            <element signature="e#3058#3135#0#PHP" expanded="true" />
+            <element signature="e#4703#4722#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

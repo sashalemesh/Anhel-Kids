@@ -22,19 +22,13 @@
 <body>
 
 <?php
-//переработать для page.php1
-if ( is_page_template('page.php') || is_page_template('index.php')) { ?>
-
-<div class="internal-pages">
-    <?php } ?>
-<?php
-if ( is_page_template('templates/order.php') || is_page_template('templates/gallery.php') || is_page_template('templates/catalog.php') || is_page_template('woocommerce.php')) { ?>
-<div class="internal-pages">
-<?php } ?>
-    <?php
     if (is_page_template('templates/construct.php')) { ?>
     <div class="internal-pages constructor">
-        <?php } ?>
+        <?php }
+        if(!is_page_template('templates/construct.php') && !is_page_template('templates/main.php')){ ?>
+            <div class="internal-pages">
+      <?php  }
+        ?>
 <!--START HEADER-->
 <header>
     <?php
