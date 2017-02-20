@@ -44,13 +44,21 @@ $catalog = get_fields();
                             setup_postdata($post);
                             ?>
                             <div class="item">
-                                <div class="img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('spec_thumb'); ?></a></div>
+                                <?php
+                                //Выводит ссылки на продукт (линки)
+                                do_action( 'woocommerce_before_shop_loop_item' );
+                                //Выводит картинки (thumbnails)
+                                do_action( 'woocommerce_before_shop_loop_item_title' );
+                                ?>
                                 <div class="description">
-                                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                                    <p><?php echo get_the_excerpt(); ?></p>
+                                    <!--Выводит тайтл-->
+                                    <?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
+                                    <!--Выводит краткое описание-->
+                                    <?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
                                     <div>
-                                        <p class="price">200 грн</p>
-                                        <a href="#" class="button">Купить</a>
+                                        <!--Выводит цену (200грн)-->
+                                        <?php do_action( 'woocommerce_after_shop_loop_item_title' );?>
+                                        <?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
                                     </div>
                                 </div>
                             </div>

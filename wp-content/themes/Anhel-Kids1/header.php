@@ -23,7 +23,7 @@
 
 <?php
 //переработать для page.php1
-if ( is_page_template('page.php')) { ?>
+if ( is_page_template('page.php') || is_page_template('index.php')) { ?>
 
 <div class="internal-pages">
     <?php } ?>

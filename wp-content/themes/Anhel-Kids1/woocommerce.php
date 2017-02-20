@@ -1,47 +1,32 @@
 <?php
 get_header();
 ?>
-
-    <p>werwerwerwerwerwrrwe1</p>
-    <p>werwerwerwerwerwrrwe2</p>
-    <p>werwerwerwerwerwrrwe3</p>
-    <p>werwerwerwerwerwrrwe4</p>
-    <p>werwerwerwerwerwrrwe5</p>
-    <section id="main">
-    <br>
-    <br>
-
-
-    <div>    <?php woocommerce_content(); ?>       </div>
-<?php //echo do_shortcode('[add_to_cart id="99"]'); ?>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <?php
-        //do_action( 'woocommerce_before_single_product_summary' );
-
-//            global $post;
-//        echo '<pre>';
-//            var_dump($post->post_title);
-//        echo '</pre>';
-//
-//        global $post;
-//        echo '<pre>';
-//        var_dump($post);
-//        echo '</pre>';
-        ?>
-
-    <br>
-    <br>
-
-    </section>
-    <p>werwerwerwerwerwrrwe5</p>
-    <p>werwerwerwerwerwrrwe6</p>
-    <p>werwerwerwerwerwrrwe7</p>
-    <p>werwerwerwerwerwrrwe8</p>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>5woocommerce5
 <?php
+woocommerce_content(); ?>
+
+<br>6
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<?php //echo do_shortcode('[add_to_cart id="99"]');
+//do_action( 'woocommerce_before_single_product_summary' );
 get_footer();
 ?>

@@ -188,8 +188,16 @@ get_header();
                                     ?>
 
                                     <li>
-                                        <div class="img"
-                                             style="background-image:url(<?php bloginfo("template_directory"); ?>/images/cover.png);"></div>
+                                        <!--Выводим картинки (необходимо стили править)-->
+                                        <div class="img" style="background-image:url();"><?php
+                                            $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+
+                                            if ( ! $product_permalink ) {
+                                                echo $thumbnail;
+                                            } else {
+                                                printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail );
+                                            }
+                                            ?></div>
                                         <div class="description">
                                             <p><?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;'; ?></p>
                                             <b>[<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>]
@@ -202,7 +210,9 @@ get_header();
                             }
                             ?>
                         </ul>
+                        <!--Subtotal заменить на Total-->
                         <p class="result"><?php _e( 'Subtotal', 'woocommerce' ); ?>  <?php wc_cart_totals_subtotal_html(); ?></p>
+
                     </div>
                 </div>
             </div>
