@@ -1,27 +1,28 @@
 <?php
 get_header();
+
 ?>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="samples">
+    <div class="title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="title"><?php the_title(); ?></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <br>5woocommerce5
+<div class="catalog">
+    <div class="container">
+
 <?php
 woocommerce_content(); ?>
 
-<br>6
-<br>
-<br>
-<br>
-<br>
+    </div>
+</div>
+
 
 
 

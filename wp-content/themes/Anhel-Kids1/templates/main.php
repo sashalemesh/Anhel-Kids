@@ -47,6 +47,7 @@ $reviews = get_fields(70);
                                 </div>
                             </div>
                         </div>
+
                         <div class="items">
                             <div class="item">
                                 <div style="<?php if($main['image_5'] != null){ ?>background-image: url(<?php echo $main['image_5'];?>);<?php }?>">
