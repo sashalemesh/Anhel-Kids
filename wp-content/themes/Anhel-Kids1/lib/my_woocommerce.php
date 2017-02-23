@@ -260,3 +260,127 @@ function woocommerce_form_field( $key, $args, $value = null ) {
         echo $field;
     }
 }
+
+
+//setings product variable
+/**
+ * Output a list of variation attributes for use in the cart forms.
+ *
+ * @param array $args
+ * @since 2.4.0
+ */
+function wc_dropdown_variation_attribute_options( $args = array() ) {
+    $args = wp_parse_args( apply_filters( 'woocommerce_dropdown_variation_attribute_options_args', $args ), array(
+        'options'          => false,
+        'attribute'        => false,
+        'product'          => false,
+        'selected' 	       => false,
+        'name'             => '',
+        'id'               => '',
+        'class'            => '',
+        'show_option_none' => __( 'Choose an option', 'woocommerce' )
+    ) );
+
+    $options               = $args['options'];
+    $product               = $args['product'];
+    $attribute             = $args['attribute'];
+    $name                  = $args['name'] ? $args['name'] : 'attribute_' . sanitize_title( $attribute );
+    $id                    = $args['id'] ? $args['id'] : sanitize_title( $attribute );
+    $class                 = $args['class'];
+    $show_option_none      = $args['show_option_none'] ? true : false;
+    $show_option_none_text = $args['show_option_none'] ? $args['show_option_none'] : __( 'Choose an option', 'woocommerce' ); // We'll do our best to hide the placeholder, but we'll need to show something when resetting options.
+
+    if ( empty( $options ) && ! empty( $product ) && ! empty( $attribute ) ) {
+        $attributes = $product->get_variation_attributes();
+        $options    = $attributes[ $attribute ];
+    }
+//Формирует вывод свойств продукта
+    $html = '<select id="' . esc_attr( $id ) . '" class="' . esc_attr( $class ) . '" name="' . esc_attr( $name ) . '" data-attribute_name="attribute_' . esc_attr( sanitize_title( $attribute ) ) . '"' . '" data-show_option_none="' . ( $show_option_none ? 'yes' : 'no' ) . '">';
+    $html .= '<option value="">' . esc_html( $show_option_none_text ) . '</option>';
+
+    if ( ! empty( $options ) ) {
+        if ( $product && taxonomy_exists( $attribute ) ) {
+            // Get terms if this is a taxonomy - ordered. We need the names too.
+            $terms = wc_get_product_terms( $product->id, $attribute, array( 'fields' => 'all' ) );
+
+            foreach ( $terms as $term ) {
+                if ( in_array( $term->slug, $options ) ) {
+                    $html .= '<option value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $args['selected'] ), $term->slug, false ) . '>' . esc_html( apply_filters( 'woocommerce_variation_option_name', $term->name ) ) . '</option>';
+                }
+            }
+        } else {
+            foreach ( $options as $option ) {
+                // This handles < 2.4.0 bw compatibility where text attributes were not sanitized.
+                $selected = sanitize_title( $args['selected'] ) === $args['selected'] ? selected( $args['selected'], sanitize_title( $option ), false ) : selected( $args['selected'], $option, false );
+                $html .= '<option value="' . esc_attr( $option ) . '" ' . $selected . '>' . esc_html( apply_filters( 'woocommerce_variation_option_name', $option ) ) . '</option>';
+            }
+        }
+    }
+
+    $html .= '</select>';
+
+    echo apply_filters( 'woocommerce_dropdown_variation_attribute_options_html', $html, $args );
+}
+
+
+//edit price
+//add_filter( 'woocommerce_get_price_html', 'wpa83367_price_html', 100, 2 );
+//function wpa83367_price_html( $price, $product ){
+//    return 'Was:' . str_replace( '<ins>', ' Now:<ins>', $price );
+//}
+//function wpa83368_price_html( $price,$product ){
+////     return $product->price;
+//    if ( $product->price > 0 ) {
+//        if ( $product->price && isset( $product->regular_price ) ) {
+//            $from = $product->regular_price;
+//            $to = $product->price;
+//            return '<div class="old-colt"><del>'. ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) .' Retail </del>  | </div><div class="live-colst">'.( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) .'Our Price</div>';
+//        } else {
+//            $to = $product->price;
+//            return '<div class="live-colst">' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . 'Our Price</div>';
+//        }
+//    } else {
+//        return '<div class="live-colst">0 Our Price</div>';
+//    }
+//}
+
+
+//add_filter('wc_price',my_wc_price);
+//function my_wc_price($return){
+//    $returne = '';
+//echo'<span>'. $return .'</span>';
+//    echo '<pre>';
+//    var_dump($return);
+//    echo '</pre>';
+//}
+
+
+//edit price Начиная от
+//function wc_ninja_custom_variable_price( $price, $product ) {
+//    // Main Price
+//    $prices = array( $product->get_variation_price( 'min', true ), $product->get_variation_price( 'max', true ) );
+//    $price = $prices[0] !== $prices[1] ? sprintf( __( 'Начиная от: %1$s', 'woocommerce' ), wc_price( $prices[0] ) ) : wc_price( $prices[0] );
+//
+//    // Sale Price
+//    $prices = array( $product->get_variation_regular_price( 'min', true ), $product->get_variation_regular_price( 'max', true ) );
+//    sort( $prices );
+//    $saleprice = $prices[0] !== $prices[1] ? sprintf( __( 'Начиная от: %1$s', 'woocommerce' ), wc_price( $prices[0] ) ) : wc_price( $prices[0] );
+//
+//    if ( $price !== $saleprice ) {
+//        $price = '' . $saleprice . ' ' . $price . '';
+//    }
+//
+//    return $price;
+//}
+//add_filter( 'woocommerce_variable_sale_price_html', 'wc_ninja_custom_variable_price', 10, 2 );
+//add_filter( 'woocommerce_variable_price_html', 'wc_ninja_custom_variable_price', 10, 2 );
+
+//edit <del class="wer"> dont work!!!
+//class  my_WC_Product extends  WC_Product {
+//    public function get_price_html_from_to( $from, $to ) {
+//        $price = '<del class="wer">' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . '</del> <ins>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ) . '</ins>';
+//
+//        return apply_filters( 'woocommerce_get_price_html_from_to', $price, $from, $to, $this );
+//    }
+//}
+

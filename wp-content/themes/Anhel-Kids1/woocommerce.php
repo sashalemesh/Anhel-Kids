@@ -2,26 +2,33 @@
 get_header();
 
 ?>
-<div class="samples">
-    <div class="title">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="title"><?php the_title(); ?></h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<br>5woocommerce5
-<div class="catalog">
-    <div class="container">
+<?php
+/**Template name: catalog_page */
+//
+//$catalog = get_fields(10);
+//?>
+<!--START CONTENT-->
+<!--<section>-->
+<!--        --><?php //if($catalog['sozdat_checol'] != null){ ?>
+<!--    <a href="--><?php //echo $catalog['sozdat_checol_url'];?><!--" class="create-Case">--><?php //echo $catalog['sozdat_checol'];?><!--</a>-->
+<!--        --><?php //}?>
+
+<!--<div class="samples">-->
+<!--    <div class="title">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+<!--                    <h2 class="title">--><?php //woocommerce_page_title(); the_title(); ?><!--</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 
 <?php
 woocommerce_content(); ?>
 
-    </div>
-</div>
 
 
 

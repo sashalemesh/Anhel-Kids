@@ -125,8 +125,8 @@ $reviews = get_fields(70);
                                 }?>
 
                                 <div class="item">
-                                    <div class="img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
-                                    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?>, </a><span><?php echo $reviews['city'];?></span></h4>
+                                    <div style="background-image: url(<?php echo get_the_post_thumbnail_url()?>);" class="img"></div>
+                                    <h4><?php the_title(); ?>, <span><?php echo $reviews['city'];?></span></h4>
                                     <p><?php echo get_the_excerpt(); ?></p>
                                 </div>
                             <!--Не работает если не доходит до трех-->

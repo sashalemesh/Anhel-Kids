@@ -22,6 +22,7 @@ $construct = get_fields();
                 <div class="step">
                     <div class="container">
                         <div class="row">
+<!--                            --><?php //get_template_part('woocommerce/single-product/add-to-cart/variable');?>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <?php if($construct['step_1'] != null){ ?>
                                 <h3 class="title"><?php echo $construct['step_1'];?></h3>
