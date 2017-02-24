@@ -3,7 +3,7 @@ get_header();
 
 ?>
 <?php
-/**Template name: catalog_page */
+
 //
 //$catalog = get_fields(10);
 //?>

@@ -25,11 +25,11 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 
-<form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+<!--<form action="--><?php //echo esc_url( wc_get_cart_url() ); ?><!--" method="post">-->
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
-<table class="shop_table shop_table_responsive cart" cellspacing="0">
+<!--<table class="shop_table shop_table_responsive cart" cellspacing="0">-->
 <!--	<thead>-->
 <!--		<tr>-->
 <!--			<th class="product-remove">&nbsp;</th>-->
@@ -40,9 +40,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 <!--			<th class="product-subtotal">--><?php //_e( 'Total', 'woocommerce' ); ?><!--</th>-->
 <!--		</tr>-->
 <!--	</thead>-->
-	<tbody>
+<!--	<tbody>-->
 <!--		--><?php //do_action( 'woocommerce_before_cart_contents' ); ?>
-
+<ul class="order">
 		<?php
 		//отвечает за вывод страницы карзины
 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -52,9 +52,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 				$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 				?>
-				<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+<!--				<tr class="--><?php //echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?><!--">-->
 					<!-- Выводит Удалить товар с карзины-->
-					<td class="product-remove">
+<!--					<td class="product-remove">-->
+<li>
+	<!--Выводим картинки (необходимо стили править)-->
+	<div class="img" style="background-image:url();">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 								'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
@@ -64,9 +67,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 								esc_attr( $_product->get_sku() )
 							), $cart_item_key );
 						?>
-					</td>
+<!--					</td>-->
 					<!--Выводит картинки (thumbnail)-->
-					<td class="product-thumbnail">
+<!--					<td class="product-thumbnail">-->
 						<?php
 							$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
@@ -76,16 +79,18 @@ do_action( 'woocommerce_before_cart' ); ?>
 								printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail );
 							}
 						?>
-					</td>
+	</div>
+	<div class="description">
+<!--					</td>-->
 					<!--Выводит тайтл-->
-					<td class="product-name" data-title="<?php _e( 'Product', 'woocommerce' ); ?>">
-						<?php
+<!--					<td class="product-name" data-title="--><?php //_e( 'Product', 'woocommerce' ); ?><!--">-->
+						<p><?php
 							if ( ! $product_permalink ) {
 								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
 							} else {
 								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_title() ), $cart_item, $cart_item_key );
 							}
-
+							?></p><?php
 							// Meta data
 							echo WC()->cart->get_item_data( $cart_item );
 
@@ -94,7 +99,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';
 							}
 						?>
-					</td>
+<!--					</td>-->
 					<!--Выводит цену единицы товара (200грн)-->
 <!--					<td class="product-price" data-title="--><?php //_e( 'Price', 'woocommerce' ); ?><!--">-->
 <!--						--><?php
@@ -102,36 +107,42 @@ do_action( 'woocommerce_before_cart' ); ?>
 //						?>
 <!--					</td>-->
 						<!--Выводит возможность увеличения - уменьшения товара-->
-					<td class="product-quantity" data-title="<?php _e( 'Quantity', 'woocommerce' ); ?>">
+<!--					<td class="product-quantity" data-title="--><?php //_e( 'Quantity', 'woocommerce' ); ?><!--">-->
 						<?php
-							if ( $_product->is_sold_individually() ) {
-								$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
-							} else {
-								$product_quantity = woocommerce_quantity_input( array(
-									'input_name'  => "cart[{$cart_item_key}][qty]",
-									'input_value' => $cart_item['quantity'],
-									'max_value'   => $_product->backorders_allowed() ? '' : $_product->get_stock_quantity(),
-									'min_value'   => '0'
-								), $_product, false );
-							}
+//							if ( $_product->is_sold_individually() ) {
+//								$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
+//							} else {
+//								$product_quantity = woocommerce_quantity_input( array(
+//									'input_name'  => "cart[{$cart_item_key}][qty]",
+//									'input_value' => $cart_item['quantity'],
+//									'max_value'   => $_product->backorders_allowed() ? '' : $_product->get_stock_quantity(),
+//									'min_value'   => '0'
+//								), $_product, false );
+//							}
 
-							echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
+//							echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
 //						?>
 <!--					</td>-->
 					<!--Выводит общую цену товара (200x200грн)-->
-					<td class="product-subtotal" data-title="<?php _e( 'Total', 'woocommerce' ); ?>">
-						<?php
+<!--					<td class="product-subtotal" data-title="--><?php //_e( 'Total', 'woocommerce' ); ?><!--">-->
+		<b>[<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>]
+		<?php
 							echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
-						?>
-					</td>
-				</tr>
+						?></b>
+	</div>
+
+</li>
+
+<!--					</td>-->
+<!--				</tr>-->
 				<?php
 			}
 		}
 
 		do_action( 'woocommerce_cart_contents' );
 		?>
-		<!--Выводит поле для купонов и обновление карзины-->
+</ul>
+<!--		Выводит поле для купонов и обновление карзины-->
 <!--		<tr>-->
 <!--			<td colspan="6" class="actions">-->
 <!---->
@@ -143,9 +154,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 <!--						--><?php //do_action( 'woocommerce_cart_coupon' ); ?>
 <!--					</div>-->
 <!--				--><?php //} ?>
-<!---->
+
 <!--				<input type="submit" class="button" name="update_cart" value="--><?php //esc_attr_e( 'Update Cart', 'woocommerce' ); ?><!--" />-->
-<!---->
+
 <!--				--><?php //do_action( 'woocommerce_cart_actions' ); ?>
 <!---->
 <!--				--><?php //wp_nonce_field( 'woocommerce-cart' ); ?>
@@ -153,18 +164,22 @@ do_action( 'woocommerce_before_cart' ); ?>
 <!--		</tr>-->
 
 		<?php do_action( 'woocommerce_after_cart_contents' ); ?>
-	</tbody>
-</table>
+<!--	</tbody>-->
+<!--</table>-->
 
 <?php do_action( 'woocommerce_after_cart_table' ); ?>
+<!--Выводит кнопку обновить корзину-->
+<!--	<input type="submit" class="button" name="update_cart" value="--><?php //esc_attr_e( 'Update Cart', 'woocommerce' ); ?><!--" />-->
 
-</form>
-<!--Выводит Cart Totals-->
-<div class="cart-collaterals">
+<!--	<div class="cart-collaterals">-->
+		<!--Выводит итого-->
+		<p class="result"><?php _e( 'Subtotal', 'woocommerce' ); ?>  <?php wc_cart_totals_subtotal_html(); ?></p>
+		<!--Выводит Cart Totals-->
+<!--		--><?php //do_action( 'woocommerce_cart_collaterals' ); ?>
 
-	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
+<!--	</div>-->
+<!--</form>-->
 
-</div>
 
 <?php
 
