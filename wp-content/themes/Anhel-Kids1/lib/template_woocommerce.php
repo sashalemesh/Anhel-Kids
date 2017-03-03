@@ -22,8 +22,8 @@ function woocommerce_content() {
             ?>
             <!--START CONTENT-->
             <section>
-            <?php if($catalog['sozdat_checol'] != null){ ?>
-                <a href="<?php echo $catalog['sozdat_checol_url'];?>" class="create-Case"><?php echo $catalog['sozdat_checol'];?></a>
+            <?php if($catalog['create_a_case'] != null){ ?>
+                <a href="<?php echo $catalog['create_a_case_url'];?>" class="create-Case"><?php echo $catalog['create_a_case'];?></a>
             <?php }?>
             <div class="samples">
                 <div class="title">

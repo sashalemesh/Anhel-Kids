@@ -25,10 +25,18 @@ get_header();
 <!--    </div>-->
 <!--</div>-->
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <?php
 woocommerce_content(); ?>
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 

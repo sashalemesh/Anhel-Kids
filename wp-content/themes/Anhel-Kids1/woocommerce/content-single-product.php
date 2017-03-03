@@ -15,7 +15,7 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
-
+//Выводит хедер страницы еденичных товаров
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }

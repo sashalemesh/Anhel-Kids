@@ -32,23 +32,23 @@ function my_custom_init(){
     ) );
 }
 
-//post chea
+//my_theme_options
 add_action('init', 'my_chea_custom_init');
 function my_chea_custom_init(){
-    register_post_type('chea', array(
+    register_post_type('chair', array(
         'labels'             => array(
-            'name'               => 'NewChea', // Основное название типа записи
-            'singular_name'      => 'Стул', // отдельное название записи типа reviews
+            'name'               => 'Новый стульчик', // Основное название типа записи
+            'singular_name'      => 'Опция', // отдельное название записи типа reviews
             'add_new'            => 'Добавить новый',
-            'add_new_item'       => 'Добавить новый стул',
-            'edit_item'          => 'Редактировать стул',
-            'new_item'           => 'Новый стул',
-            'view_item'          => 'Посмотреть стул',
-            'search_items'       => 'Найти стул',
-            'not_found'          =>  'Стул не найден',
-            'not_found_in_trash' => 'В корзине стульев не найдено',
+            'add_new_item'       => 'Добавить новый стульчик',
+            'edit_item'          => 'Редактировать стульчик',
+            'new_item'           => '',
+            'view_item'          => 'Посмотреть стульчик',
+            'search_items'       => 'Найти стульчик',
+            'not_found'          =>  'Стульчик не найден',
+            'not_found_in_trash' => 'В корзине не найдено',
             'parent_item_colon'  => '',
-            'menu_name'          => 'Новый стул'
+            'menu_name'          => 'Стульчики'
 
         ),
         'public'             => true,
@@ -268,3 +268,7 @@ function my_chea_custom_init(){
 //            )
 //        )
 //    );
+
+
+
+
