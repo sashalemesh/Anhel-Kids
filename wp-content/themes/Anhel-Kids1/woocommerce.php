@@ -1,43 +1,27 @@
 <?php
 get_header();
-
 ?>
-<?php
-
-//
-//$catalog = get_fields(10);
-//?>
-<!--START CONTENT-->
-<!--<section>-->
-<!--        --><?php //if($catalog['sozdat_checol'] != null){ ?>
-<!--    <a href="--><?php //echo $catalog['sozdat_checol_url'];?><!--" class="create-Case">--><?php //echo $catalog['sozdat_checol'];?><!--</a>-->
-<!--        --><?php //}?>
-
-<!--<div class="samples">-->
-<!--    <div class="title">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-<!--                    <h2 class="title">--><?php //woocommerce_page_title(); the_title(); ?><!--</h2>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
 <br>
 <br>
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>5woocommerce5
 <?php
 woocommerce_content(); ?>
-<br>
-<br>
-<br>
-<br>
-<br>
 
+<br>6
+<br>
+<br>
+<br>
+<br>
 
 
 

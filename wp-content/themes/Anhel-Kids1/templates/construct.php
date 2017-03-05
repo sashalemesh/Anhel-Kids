@@ -22,7 +22,6 @@ $construct = get_fields();
                 <div class="step">
                     <div class="container">
                         <div class="row">
-<!--                            --><?php //get_template_part('woocommerce/single-product/add-to-cart/variable');?>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <?php if($construct['step_1'] != null){ ?>
                                 <h3 class="title"><?php echo $construct['step_1'];?></h3>
@@ -31,38 +30,128 @@ $construct = get_fields();
                                 <h4 class="title"><?php echo $construct['text_1'];?></h4>
                                 <?php }?>
                                 <div class="constructor-slider">
-
-                                    <?php
-                                    $count = 1;
-                                    $my_posts = get_posts('numberposts=0&post_type=chair');
-                                    foreach ($my_posts as $post) {
-
-                                        if($count == 1){
-                                        ?>
-                                            <div class="constructor-items">
-                                            <?php } ?>
+                                    <div class="constructor-items">
                                         <div class="constructor-item">
-                                        <label for="armchair">
-                                            <div class="cloud">
-                                                <img src="<?php echo get_the_post_thumbnail_url($post->ID) ?>" alt="">
+                                            <label for="armchair">
+                                                <div class="cloud">
+                                                    <img src="<?php bloginfo("template_directory");?>/images/chair.png" alt="">
+                                                </div>
+                                            </label>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair">
+                                                <label for="armchair"></label>
+                                                <label for="armchair">Brevi fun</label>
                                             </div>
-                                        </label>
-                                        <div class="input">
-                                            <input type="radio" name="armchair" id="armchair<?php echo $post->ID; ?>">
-                                            <label for="armchair<?php echo $post->ID; ?>"></label>
-                                            <label for="armchair"><?php echo $post->post_title; ?></label>
                                         </div>
+                                        <div class="constructor-item">
+                                            <label for="armchair-2">
+                                                <div class="cloud">
+                                                    <img src="<?php bloginfo("template_directory");?>/images/chair_1.png" alt="">
+                                                </div>
+                                            </label>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-2">
+                                                <label for="armchair-2"></label>
+                                                <label for="armchair-2">Peg Perego Tatamia</label>
+                                            </div>
                                         </div>
-                                        <?php
-                                        if($count == 2){ ?>
                                     </div>
-                                       <?php } ?>
-                                        <?php
-                                        $count++;
-                                        if($count == 3)
-                                            $count = 1;
-                                        ?>
-                                    <?php  } ?>
+                                    <div class="constructor-items">
+                                        <div class="constructor-item">
+                                            <label for="armchair-3">
+                                                <div class="cloud">
+                                                    <img src="<?php bloginfo("template_directory");?>/images/chair_2.png" alt="">
+                                                </div>
+                                            </label>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-3">
+                                                <label for="armchair-3"></label>
+                                                <label for="armchair-3">Omega Bebe comfort</label>
+                                            </div>
+                                        </div>
+                                        <div class="constructor-item">
+                                            <label for="armchair-4">
+                                                <div class="cloud">
+                                                    <img src="<?php bloginfo("template_directory");?>/images/chair.png" alt="">
+                                                </div>
+                                            </label>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-4">
+                                                <label for="armchair-4"></label>
+                                                <label for="armchair-4">Brevi fun</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="constructor-items">
+                                        <div class="constructor-item">
+                                            <label for="armchair-5">
+                                                <div class="cloud">
+                                                    <img src="<?php bloginfo("template_directory");?>/images/chair_1.png" alt="">
+                                                </div>
+                                            </label>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-5">
+                                                <label for="armchair-5"></label>
+                                                <label for="armchair-5">Peg Perego Tatamia</label>
+                                            </div>
+                                        </div>
+                                        <div class="constructor-item">
+                                            <label for="armchair-6">
+                                                <div class="cloud">
+                                                    <img src="<?php bloginfo("template_directory");?>/images/chair_2.png" alt="">
+                                                </div>
+                                            </label>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-6">
+                                                <label for="armchair-6"></label>
+                                                <label for="armchair-6">Omega Bebe comfort</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="constructor-items">
+                                        <div class="constructor-item">
+                                            <div class="cloud">
+                                                <img src="<?php bloginfo("template_directory");?>/images/chair.png" alt="">
+                                            </div>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-7">
+                                                <label for="armchair-7"></label>
+                                                <label for="armchair-7">Brevi fun</label>
+                                            </div>
+                                        </div>
+                                        <div class="constructor-item">
+                                            <div class="cloud">
+                                                <img src="<?php bloginfo("template_directory");?>/images/chair_1.png" alt="">
+                                            </div>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-8">
+                                                <label for="armchair-8"></label>
+                                                <label for="armchair-8">Peg Perego Tatamia</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="constructor-items">
+                                        <div class="constructor-item">
+                                            <div class="cloud">
+                                                <img src="<?php bloginfo("template_directory");?>/images/chair_2.png" alt="">
+                                            </div>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-9">
+                                                <label for="armchair-9"></label>
+                                                <label for="armchair-9">Omega Bebe comfort</label>
+                                            </div>
+                                        </div>
+                                        <div class="constructor-item">
+                                            <div class="cloud">
+                                                <img src="<?php bloginfo("template_directory");?>/images/chair_2.png" alt="">
+                                            </div>
+                                            <div class="input">
+                                                <input type="radio" name="armchair" id="armchair-10">
+                                                <label for="armchair-10"></label>
+                                                <label for="armchair-10">Omega Bebe comfort</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="input no-my-model">
                                     <input type="radio" name="armchair" id="armchair-11">

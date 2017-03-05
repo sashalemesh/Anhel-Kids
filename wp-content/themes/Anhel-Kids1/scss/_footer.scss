@@ -43,14 +43,6 @@ footer
 			width: 100%;
 			max-width: 285px;
 			
-            & + p
-            {
-                display: inline-block;
-                width: calc(100% - 290px - 25px);
-                margin-left: 25px;
-                vertical-align: top;
-                margin-top: 20px;
-            }
 			input
 			{
 				&[type="text"],
@@ -83,10 +75,13 @@ footer
 		}
 		textarea
 		{
-			width: 100%;
+			width: calc(100% - 290px - 25px);
+			margin-left: 25px;
 			height: 190px;
 			background: #fff;
 			border: none;
+			vertical-align: top;
+			margin-top: 20px;
 			padding: 15px 10px 10px 15px;
 		}
 	}

@@ -5,19 +5,8 @@ get_header();
 
 ?>
 <?php
-$post_id = get_the_ID();
-$img_simple = get_field('image_sample', $post_id);
-
-$Block_out_what_were_made_of = get_field('Block_out_what_were_made_of', $post_id);
-
 $main = get_fields();
 $reviews = get_fields(70);
-$reviews1 = get_fields('post_type=reviews');
-echo '<pre>';
-//var_dump($reviews);
-//var_dump($reviews);
-echo '</pre>';
-//echo get_post_meta( get_the_ID(), '_my_meta_value_key', 1 );
 ?>
     <!--END HEADER-->
 
@@ -40,28 +29,60 @@ echo '</pre>';
             <div class="container">
                 <div class="row">
                     <div class="slider">
-                        <?php if (isset($img_simple) && !empty($img_simple)): ?>
-                            <?php foreach ($img_simple as $block): ?>
-                        <div class="items">                           
+                        <div class="items">
                             <div class="item">
-                                <div style="background-image: url(<?php echo $block['image_1'];?>);">                                   
+                                <div style="<?php if($main['image_1'] != null){ ?>background-image: url(<?php echo $main['image_1'];?>);<?php }?>">
                                 </div>
                             </div>
-                             <div class="item">
-                                <div style="background-image: url(<?php echo $block['image_2'];?>);">                                   
+                            <div class="item">
+                                <div style="<?php if($main['image_2'] != null){ ?>background-image: url(<?php echo $main['image_2'];?>);<?php }?>">
                                 </div>
                             </div>
-                             <div class="item">
-                                <div style="background-image: url(<?php echo $block['image_3'];?>);">                                   
+                            <div class="item">
+                                <div style="<?php if($main['image_3'] != null){ ?>background-image: url(<?php echo $main['image_3'];?>);<?php }?>">
                                 </div>
                             </div>
-                             <div class="item">
-                                <div style="background-image: url(<?php echo $block['image_4'];?>);">                                   
+                            <div class="item">
+                                <div style="<?php if($main['image_4'] != null){ ?>background-image: url(<?php echo $main['image_4'];?>);<?php }?>">
                                 </div>
-                            </div>                           
+                            </div>
                         </div>
-                        <?php endforeach; ?>
-                            <?php endif; ?>                      
+                        <div class="items">
+                            <div class="item">
+                                <div style="<?php if($main['image_5'] != null){ ?>background-image: url(<?php echo $main['image_5'];?>);<?php }?>">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="<?php if($main['image_6'] != null){ ?>background-image: url(<?php echo $main['image_6'];?>);<?php }?>">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="<?php if($main['image_7'] != null){ ?>background-image: url(<?php echo $main['image_7'];?>);<?php }?>">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="<?php if($main['image_8'] != null){ ?>background-image: url(<?php echo $main['image_8'];?>);<?php }?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <div style="<?php if($main['image_9'] != null){ ?>background-image: url(<?php echo $main['image_9'];?>);<?php }?>">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="<?php if($main['image_10'] != null){ ?>background-image: url(<?php echo $main['image_10'];?>);<?php }?>">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="<?php if($main['image_11'] != null){ ?>background-image: url(<?php echo $main['image_11'];?>);<?php }?>">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div style="<?php if($main['image_12'] != null){ ?>background-image: url(<?php echo $main['image_12'];?>);<?php }?>">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <img class="girl" src="<?php bloginfo("template_directory");?>/images/girl.svg" alt="#">
                     <img class="boy" src="<?php bloginfo("template_directory");?>/images/boy.svg" alt="#">
@@ -89,29 +110,26 @@ echo '</pre>';
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
                         <div class="reviews-slider">
-                            
-                       
-                            
-                               <?php
+
+                        <?php
                         $my_posts = get_posts('numberposts=0&post_type=reviews');
-                               //var_dump(count($my_posts));
-                        $counter = 0;
+                        $couter = 0;
                         foreach ($my_posts as $post) :
                             setup_postdata($post);
 
                             ?>
 
-                            <?php if($counter == 0) {
+                            <?php if($couter == 0) {
                                 echo '<div class="items">';
                                 }?>
 
                                 <div class="item">
-                                    <div style="background-image: url(<?php echo get_the_post_thumbnail_url()?>);" class="img"></div>
-                                    <h4><?php the_title(); ?></h4>
+                                    <div class="img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
+                                    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?>, </a><span><?php echo $reviews['city'];?></span></h4>
                                     <p><?php echo get_the_excerpt(); ?></p>
                                 </div>
                             <!--Не работает если не доходит до трех-->
-                            <?php if($counter == 3){
+                            <?php if($couter == 3){
 
                                 echo '</div>';
 
@@ -119,13 +137,11 @@ echo '</pre>';
 
                         <?php
                             //var_dump($couter);
-                            $counter++;
-                            if($counter == 4){
-                                $counter = 0;
+                            $couter++;
+                            if($couter == 4){
+                                $couter = 0;
                             }
                         endforeach; ?>
-                            
-                            
                         </div>
 
 <!--                        <div class="reviews-slider">-->
@@ -240,8 +256,8 @@ echo '</pre>';
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <?php if($main['out_what_were_made_of'] != null){ ?>
-                                <h2 class="title reviews"><?php echo $main['out_what_were_made_of'];?></h2>
+                                <?php if($main['iz_chego_mi_sdelany'] != null){ ?>
+                                <h2 class="title reviews"><?php echo $main['iz_chego_mi_sdelany'];?></h2>
                                 <?php }?>
                             </div>
                         </div>
@@ -254,41 +270,95 @@ echo '</pre>';
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="done-slider">
-
-                            <?php if (isset($Block_out_what_were_made_of) && !empty($Block_out_what_were_made_of)): ?>
-                            <?php foreach ($Block_out_what_were_made_of as $block): ?>
                             <div class="item">
                                 <div class="left-block">
                                     <div class="block">
-                                        <img src="<?php echo $block['image_1'];?>" alt="">
-                                        <h5><?php echo $block['title_1'];?></h5>
-                                        <p><?php echo $block['description_1'];?></p>
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_3.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
                                     </div>
                                     <div class="block">
-                                    <img src="<?php echo $block['image_2'];?>" alt="">
-                                    <h5><?php echo $block['title_2'];?></h5>
-                                    <p><?php echo $block['description_2'];?></p>
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_1.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
                                     </div>
                                 </div>
                                 <div class="center-block">
-                                    <img src="<?php echo $block['the_central_image'];?>" alt="">
+                                    <img src="<?php bloginfo("template_directory");?>/images/chair.svg" alt="">
                                 </div>
                                 <div class="right-block">
                                     <div class="block">
-                                    <img src="<?php echo $block['image_3'];?>" alt="">
-                                    <h5><?php echo $block['title_3'];?></h5>
-                                    <p><?php echo $block['description_3'];?></p>
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_4.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
                                     </div>
                                     <div class="block">
-                                    <img src="<?php echo $block['image_4'];?>" alt="">
-                                    <h5><?php echo $block['title_4'];?></h5>
-                                    <p><?php echo $block['description_4'];?></p>
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_2.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
                                     </div>
                                 </div>
                             </div>
-                                <?php endforeach; ?>
-                            <?php endif; ?>
 
+                            <div class="item">
+                                <div class="left-block">
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_3.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_1.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                </div>
+                                <div class="center-block">
+                                    <img src="<?php bloginfo("template_directory");?>/images/chair.svg" alt="">
+                                </div>
+                                <div class="right-block">
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_4.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_2.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="left-block">
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_3.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_1.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                </div>
+                                <div class="center-block">
+                                    <img src="<?php bloginfo("template_directory");?>/images/chair.svg" alt="">
+                                </div>
+                                <div class="right-block">
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_4.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                    <div class="block">
+                                        <img src="<?php bloginfo("template_directory");?>/images/cloud_2.svg" alt="">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad facere voluptatibus doloribus est officia cumque vero expedita, non veniam. Obcaecati amet maiores minima reiciendis dolore in, tenetur.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

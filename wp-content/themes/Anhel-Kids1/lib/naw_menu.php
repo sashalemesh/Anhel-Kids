@@ -11,7 +11,6 @@ function kids_setup()
     }
 }
     add_action('after_setup_theme', 'kids_setup');
-$classes1 = array('logo','constructor','catalog','gallery','about-us','vk');
 
 class Sublevel_Walker extends Walker_Nav_Menu {
     /**
@@ -57,9 +56,7 @@ class Sublevel_Walker extends Walker_Nav_Menu {
             $n = "\n";
         }
         $indent = str_repeat( $t, $depth );
-        $output .= "{$n}{$indent}<ul class=\"sub-menu\">{$n}<li></li>";
-        //$output .= "{$n}{$indent}<li class=\"logo\">{$n}";
-
+        $output .= "{$n}{$indent}<ul class=\"sub-menu\">{$n}";
     }
 
     /**
@@ -83,9 +80,6 @@ class Sublevel_Walker extends Walker_Nav_Menu {
         }
         $indent = str_repeat( $t, $depth );
         $output .= "$indent</ul>{$n}";
-        //$output .= "$indent</li>{$n}";
-
-
     }
 
     /**
@@ -110,30 +104,10 @@ class Sublevel_Walker extends Walker_Nav_Menu {
             $t = "\t";
             $n = "\n";
         }
-        if($item->ID == 273) {
-            $item->ID = 'logo';
-        }
-        if($item->ID == 16) {
-            $item->ID = 'constructor';
-        }
-        if($item->ID == 214) {
-            $item->ID = 'catalog';
-        }
-        if($item->ID == 216) {
-            $item->ID = 'gallery';
-        }
-        if($item->ID == 215) {
-            $item->ID = 'about-us';
-        }
-        if($item->ID == 272) {
-            $item->ID = 'vk';
-        }
         $indent = ( $depth ) ? str_repeat( $t, $depth ) : '';
-        $classes1 = array('logo','constructor','catalog','gallery','about-us','vk');
-        //$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-        //$classes[] = 'menu-item-' . $item->ID;
-        $classes[] = '' . $item->ID;
-var_dump($classes1);
+
+        $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+        $classes[] = 'menu-item-' . $item->ID;
 
         /**
          * Filters the arguments for a single nav menu item.
@@ -157,7 +131,6 @@ var_dump($classes1);
          * @param stdClass $args    An object of wp_nav_menu() arguments.
          * @param int      $depth   Depth of menu item. Used for padding.
          */
-
         $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
         $class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 
@@ -172,23 +145,10 @@ var_dump($classes1);
          * @param stdClass $args    An object of wp_nav_menu() arguments.
          * @param int      $depth   Depth of menu item. Used for padding.
          */
-
         $id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth );
         $id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-        //$item->ID[0];
-        //var_dump($item->ID);
-        //$class_names1 = array('logo','constructor','catalog','gallery','about-us','vk');
-        //$output .= $indent . '<li' . $class_names .'>';
-
-        //var_dump($class_names1);
-//        if(!is_page_template('templates/main.php')){
-        $output .= $indent . '<li'  . $class_names.'>';
-
-
-        //$i++;
-        //var_dump($classes1[$i]);
-        var_dump($item->ID);
+        $output .= $indent . '<li' . $id . $class_names .'>';
 
         $atts = array();
         $atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
@@ -240,25 +200,9 @@ var_dump($classes1);
         $title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
 
         $item_output = $args->before;
-
-        if($item->ID == 'logo') {
-            $item_output .= '<a'. $attributes .'>';
-        }
-        elseif($item->ID == 'vk') {
-            $item_output .= '<a'. $attributes .'target="_blank">';
-        }else {
-            $item_output .= '<a' . $attributes . '><p>';
-        }
-        //var_dump($item->ID);
+        $item_output .= '<a'. $attributes .'>';
         $item_output .= $args->link_before . $title . $args->link_after;
-        if($item->ID == 'logo') {
-            $item_output .= '</a>';
-        }
-        elseif($item->ID == 'vk') {
-            $item_output .= '</a>';
-        }else {
-            $item_output .= '</p></a>';
-        }
+        $item_output .= '</a>';
         $item_output .= $args->after;
 
         /**

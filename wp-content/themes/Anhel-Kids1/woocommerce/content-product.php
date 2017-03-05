@@ -28,95 +28,51 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 
-<!--<div class="item">-->
-<!--	--><?php
-//	/**
-//	 * woocommerce_before_shop_loop_item hook.
-//	 *
-//	 * @hooked woocommerce_template_loop_product_link_open - 10
-//	 */
-//	//Выводит ссылки на продукт (линки)
-//	do_action( 'woocommerce_before_shop_loop_item' );
-//
-//	/**
-//	 * woocommerce_before_shop_loop_item_title hook.
-//	 *
-//	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-//	 * @hooked woocommerce_template_loop_product_thumbnail - 10
-//	 */
-//	//Выводит картинки (thumbnails)
-//	do_action( 'woocommerce_before_shop_loop_item_title' );
-//
-//	/**
-//	 * woocommerce_shop_loop_item_title hook.
-//	 *
-//	 * @hooked woocommerce_template_loop_product_title - 10
-//	 */
-//	//Выводит тайтл
-//	do_action( 'woocommerce_shop_loop_item_title' );
-//
-//	/**
-//	 * woocommerce_after_shop_loop_item_title hook.
-//	 *
-//	 * @hooked woocommerce_template_loop_rating - 5
-//	 * @hooked woocommerce_template_loop_price - 10
-//	 */
-//	//Выводит цену (200грн)
-//	do_action( 'woocommerce_after_shop_loop_item_title' );
-//	//Выводит нижнее поле (Краткое описание)
-//	echo apply_filters( 'woocommerce_short_description', $post->post_excerpt );
-//
-//	/**
-//	 * woocommerce_after_shop_loop_item hook.
-//	 *
-//	 * @hooked woocommerce_template_loop_product_link_close - 5
-//	 * @hooked woocommerce_template_loop_add_to_cart - 10
-//	 */
-//	//Выводит Купить
-//	do_action( 'woocommerce_after_shop_loop_item' );
-//	?>
-
+<div class="item">
 	<?php
+	/**
+	 * woocommerce_before_shop_loop_item hook.
+	 *
+	 * @hooked woocommerce_template_loop_product_link_open - 10
+	 */
 	//Выводит ссылки на продукт (линки)
-//	do_action( 'woocommerce_before_shop_loop_item' );
-//	//Выводит картинки (thumbnails)
-//	do_action( 'woocommerce_before_shop_loop_item_title' );
-//	?>
-<!--	<div class="description">-->
-		<!--Выводит тайтл-->
-<!--		--><?php //do_action( 'woocommerce_shop_loop_item_title' ); ?>
-		<!--Выводит краткое описание-->
-<!--		--><?php //echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
-<!--		<div>-->
-			<!--Выводит цену (200грн)-->
-<!--			--><?php //do_action( 'woocommerce_after_shop_loop_item_title' );?>
-<!--			--><?php //do_action( 'woocommerce_after_shop_loop_item' ); ?>
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
+	do_action( 'woocommerce_before_shop_loop_item' );
 
+	/**
+	 * woocommerce_before_shop_loop_item_title hook.
+	 *
+	 * @hooked woocommerce_show_product_loop_sale_flash - 10
+	 * @hooked woocommerce_template_loop_product_thumbnail - 10
+	 */
+	//Выводит картинки (thumbnails)
+	do_action( 'woocommerce_before_shop_loop_item_title' );
 
-<!---->
+	/**
+	 * woocommerce_shop_loop_item_title hook.
+	 *
+	 * @hooked woocommerce_template_loop_product_title - 10
+	 */
+	//Выводит тайтл
+	do_action( 'woocommerce_shop_loop_item_title' );
 
+	/**
+	 * woocommerce_after_shop_loop_item_title hook.
+	 *
+	 * @hooked woocommerce_template_loop_rating - 5
+	 * @hooked woocommerce_template_loop_price - 10
+	 */
+	//Выводит цену (200грн)
+	do_action( 'woocommerce_after_shop_loop_item_title' );
+	//Выводит нижнее поле (Краткое описание)
+	echo apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 
-							<div class="item">
-								<?php
-								//Выводит ссылки на продукт (линки)
-								do_action( 'woocommerce_before_shop_loop_item' );
-								//Выводит картинки (thumbnails)
-								do_action( 'woocommerce_before_shop_loop_item_title' );
-								?>
-								<div class="description">
-									<!--Выводит тайтл-->
-									<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
-									<!--Выводит краткое описание-->
-									<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
-									<div>
-										<!--Выводит цену (200грн)-->
-										<?php do_action( 'woocommerce_after_shop_loop_item_title' );?>
-										<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
-									</div>
-								</div>
-
-							</div>
-
+	/**
+	 * woocommerce_after_shop_loop_item hook.
+	 *
+	 * @hooked woocommerce_template_loop_product_link_close - 5
+	 * @hooked woocommerce_template_loop_add_to_cart - 10
+	 */
+	//Выводит Купить
+	do_action( 'woocommerce_after_shop_loop_item' );
+	?>
+</div>

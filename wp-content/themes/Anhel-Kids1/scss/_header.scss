@@ -17,13 +17,14 @@ header
 
 	.button
 	{
-		width:23vw;
+		width: 448px;
+		height: 88px;
 		border: 1px dashed #fff;
 		box-shadow: 0 0 0px 7px #ed7168;
 		border-radius: 10px;
 		background-color: #ed7168;
 		color: #ffffff;
-		font-size: 2vw;
+		font-size: 36px;
 		display: table;
 		margin: 0 auto;
 		position: absolute;
@@ -31,7 +32,7 @@ header
 		bottom: 30px;
 		right: -15.5%;
 		text-align: center;
-		line-height: 2.4;
+		line-height: 88px;
 		transition: 0.5s;
 		&:hover
 		{
@@ -116,11 +117,11 @@ header
 	{
 		display: inline-block;
 		vertical-align: middle;
-		line-height: 2;
+		line-height: 70px;
 		text-align: center;
 		padding: 0 5px;
 		background: #fff;
-        margin: 0 1.5vw;
+        margin: 0 30px;
         position: relative;
         &:before
         {
@@ -160,7 +161,7 @@ header
         }
 		p
 		{
-			font-size: 1.6vw;
+			font-size: 36px;
 			font-family: 'BIP';
 			color: #95dbde;
 		}
@@ -168,7 +169,7 @@ header
 		{
 			img
 			{
-				height: 2.5vw;
+				height: 51px;
 			}
 		}
 		&.constructor
@@ -182,8 +183,8 @@ header
             a
             {
 			    border:5px solid #d6dada;
-//			    outline:10px solid #ed7a7c;
-                box-shadow: 0 0 0 10px #ed7a7c;
+			    outline:10px solid #ed7a7c;
+               
             }
             &:hover
             {
@@ -204,8 +205,7 @@ header
             a
             {
                 border:5px solid #d6dada;
-//			    outline:10px solid #fff;
-                box-shadow: 0 0 0 10px #fff;
+			    outline:10px solid #fff;
             }
             &:hover
             {
@@ -226,8 +226,7 @@ header
             a
             {
                 border:5px solid #d6dada;
-//                outline:10px solid #fbc600; 
-                box-shadow: 0 0 0 10px #fbc600;
+                outline:10px solid #fbc600;    
             }
             &:hover
             {
@@ -248,8 +247,7 @@ header
             a
             {
                 border:5px solid #d6dada;
-//			    outline:10px solid #00726c;
-                box-shadow: 0 0 0 10px #00726c;
+			    outline:10px solid #00726c;
             }
             &:hover
             {
@@ -304,28 +302,24 @@ header
 .video 
 {
     position: absolute;
-    top: 20%;
-    left: 50%; 
+    top: 20.1%;
+    left: 0;
+    right: 33px;
     display: table;
     margin: 0 auto;
-    background: url(../images/tv.svg) no-repeat;
-    padding: 0.5vw;
-    transform: translateX(-52.5%); 
+    width: 33.1vw; 
     video
     {
-        width: 33.1vw;
+        width: 100%;
         max-height: 356px;
     }
+    transform: scale()
 }
 .soska
 {
     -webkit-animation: scale-animation 0.5s linear infinite alternate;
     -moz-animation: scale-animation 0.5s linear infinite alternate;
     animation: scale-animation 0.5s linear infinite alternate;
-}
-.header-bg
-{
-    margin-bottom: -2px;
 }
 @-moz-keyframes scale-animation {
   0% {
@@ -353,9 +347,9 @@ header
 }
 .soska2
 {
-    -webkit-animation: scale-animation2 2s linear infinite alternate;
-    -moz-animation: scale-animation2 2s linear infinite alternate;
-    animation: scale-animation2 2s linear infinite alternate;
+    -webkit-animation: scale-animation2 1s linear infinite alternate;
+    -moz-animation: scale-animation2 1s linear infinite alternate;
+    animation: scale-animation2 1s linear infinite alternate;
 }
 @-moz-keyframes scale-animation2 {
 	0% 

@@ -11,7 +11,7 @@ get_header();
 
     <!--START CONTENT-->
 <!--<body>-->
-<!--START HEADER-->
+<!--<!--START HEADER-->-->
 <!--<div class="internal-pages">-->
 <!--    <header>-->
 <!--        <div class="container">-->
@@ -129,64 +129,44 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-<!--                        <ul class="order">-->
-                        <?php echo do_shortcode('[woocommerce_cart]');?>
-                            <!--Криво ссылки выводит-->
-<!--                            --><?php
-//                            foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-//                                $_product = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
-//                                if ($_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters('woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key)) {
-//                                    ?>
+                        <ul class="order">
                             <?php
-                            //твечает за вывод страницы карзины
-//                            foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-//                                $_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-//                                $product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
-//
-//                                if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
-//                                    $product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
-//                                    ?>
-<!---->
-<!--                                    <li>-->
+                            foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+                                $_product = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
+                                if ($_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters('woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key)) {
+                                    ?>
+
+                                    <li>
                                         <!--Выводим картинки (необходимо стили править)-->
-<!--                                        <div class="img" style="background-image:url();">-->
-<!--                                            --><?php
-//                                            $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-//
-//                                            if ( ! $product_permalink ) {
-//                                                echo $thumbnail;
-//                                            } else {
-//                                                printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail );
-//                                            }
-//                                            ?>
-<!--                                        </div>-->
-<!--                                        <div class="description">-->
-                                            <!--Выводит тайтл-->
-<!--                                            <p>--><?php //echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;'; ?><!--</p>-->
-<!--<p>--><?php //if ( ! $product_permalink ) {
-//    echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
-//    } else {
-//    echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_title() ), $cart_item, $cart_item_key );
-//    } ?><!--</p>-->
-<!--                                            <b>[--><?php //echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?><!--]-->
-<!--                                                --><?php //echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); ?><!--</b>-->
-<!--                                        </div>-->
-<!---->
-<!--                                    </li>-->
-<!---->
-<!--                                    --><?php
-//                                }
-//                            }
-//                            ?>
-<!--                        </ul>-->
+                                        <div class="img" style="background-image:url();"><?php
+                                            $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+
+                                            if ( ! $product_permalink ) {
+                                                echo $thumbnail;
+                                            } else {
+                                                printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail );
+                                            }
+                                            ?></div>
+                                        <div class="description">
+                                            <p><?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;'; ?></p>
+                                            <b>[<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>]
+                                                <?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); ?></b>
+                                        </div>
+                                    </li>
+
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </ul>
                         <!--Subtotal заменить на Total-->
-<!--                        <p class="result">--><?php //_e( 'Subtotal', 'woocommerce' ); ?><!--  --><?php //wc_cart_totals_subtotal_html(); ?><!--</p>-->
+                        <p class="result"><?php _e( 'Subtotal', 'woocommerce' ); ?>  <?php wc_cart_totals_subtotal_html(); ?></p>
 
                     </div>
                 </div>
             </div>
         </div>
+        <?php echo do_shortcode('[woocommerce_checkout]'); ?>
         <div class="reviews-block">
             <div class="reviews-content">
                 <div class="title reviews">
@@ -204,23 +184,21 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<!--                        <form>-->
-<!--                            <input type="text" placeholder="Имя">-->
-<!--                            <input type="text" placeholder="Фамилия">-->
-<!--                            <input type="tel" placeholder="Телефон">-->
-<!--                            <input type="email" placeholder="Email">-->
-<!--                            <input type="text" placeholder="Город">-->
-<!--                            <input type="text" placeholder="Номер отделения Новой почты">-->
-<!--                            <label for="">или</label>-->
-<!--                            <input type="text" placeholder="Номер отделения Укрпочты">-->
-<!--                            <input type="submit" value="Оплатить">-->
-<!--                            <input type="submit" value="Оставить заявку">-->
-<!--                        </form>-->
-                        <?php echo do_shortcode('[woocommerce_checkout]'); ?>
+                        <form>
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="tel" placeholder="Телефон">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Город">
+                            <input type="text" placeholder="Номер отделения Новой почты">
+                            <label for="">или</label>
+                            <input type="text" placeholder="Номер отделения Укрпочты">
+                            <input type="submit" value="Оплатить">
+                            <input type="submit" value="Оставить заявку">
+                        </form>
                     </div>
                 </div>
             </div>
-
         </div>
 <!--        <div class="reviews-block">-->
 <!--            <div class="reviews-content">-->

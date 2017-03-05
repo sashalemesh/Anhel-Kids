@@ -12,31 +12,8 @@ function woocommerce_content() {
     } else { ?>
 
         <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-<!--Выводит тайтл страницы SHOP-->
-<!--            <h1 class="page-title">--><?php //woocommerce_page_title(); ?><!--</h1>-->
 
-            <?php
-            /**Template name: catalog_page */
-
-            $catalog = get_fields(90);
-            ?>
-            <!--START CONTENT-->
-            <section>
-            <?php if($catalog['create_a_case'] != null){ ?>
-                <a href="<?php echo $catalog['create_a_case_url'];?>" class="create-Case"><?php echo $catalog['create_a_case'];?></a>
-            <?php }?>
-            <div class="samples">
-                <div class="title">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="title"><?php woocommerce_page_title();?></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
         <?php endif; ?>
 
